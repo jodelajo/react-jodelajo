@@ -1,6 +1,7 @@
 :root {
     --colors-primary: #151617;
     --colors-background: white;
+    --colors-accent: rgb(220,20,60);
 }
 
 body {
@@ -8,3 +9,12 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+h1{
+    font-size: 12rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: var(--colors-background);
+    margin-top: 40px;
+}
+

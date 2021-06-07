@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./NavBar.module.css";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo300x300.png"
+import logo from "../../assets/images/logo300x300.png";
 
 function NavBar() {
   const [checked, setChecked] = useState(false);
@@ -12,11 +12,16 @@ function NavBar() {
 
   return (
     <div className={styles["navbar-container"]}>
-        <div className={styles["logo-name-wrapper"]}>
-        <img src={logo} alt="logo " className={styles["logo"]}/>
-        <h2>jodelajo</h2>
-        </div>
-        
+      <div className={styles["logo-name-wrapper"]}>
+        <Link to="/">
+          <img src={logo} alt="logo" className={styles["logo"]} />
+          </Link>
+          <h2>
+            jodelajo<span className={styles["dot"]}>.</span>
+          </h2>
+       
+      </div>
+
       <label htmlFor="hamburger" className={styles["hamburger-icon"]}>
         &#9776;
       </label>

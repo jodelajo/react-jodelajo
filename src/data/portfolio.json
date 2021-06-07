@@ -1,0 +1,138 @@
+[
+  {
+    "id": "1",
+    "title": "De Haringvrouw",
+    "website": "https://haringvrouw.nl/",
+    "category": {
+      "Wordpress": true,
+      "Javascript": false,
+      "React": false,
+      "Logo": true,
+      "Huisstijl": true,
+      "ReactNative": false
+    },
+    "image": "/portfolio/haringvrouw.png",
+    "description": "De Haringvrouw is een webshop. De site is Mobile First ontworpen; dat betekent dat de basis van de site in eerste instantie gemaakt is voor mobile devices. Voor deze website waren belangrijk: shop Duidelijke en herkenbare look & feel. Zeer geschikt voor kleinere beeldschermen."
+  },
+  {
+    "id": "2",
+    "title": "Tent op Vlie",
+    "website": "https://tentopvlie.nl/",
+    "category": {
+      "Wordpress": true,
+      "Javascript": false,
+      "React": false,
+      "Logo": true,
+      "Huisstijl": true,
+      "ReactNative": false
+    },
+    "image": "/portfolio/tentopvlie.png",
+    "description": "Deze website is gemaakt om een vakantielocatie te verhuren. In dit geval een tent op Vlieland. Belangrijke voorwaarden voor de site waren: verleidelijk/sfeer, informatief, boekingssysteem. De site staat hoog in de zoekmachines met de woorden “tent te huur Vlieland”."
+  },
+  {
+    "id": "3",
+    "title": "Bêste plakje fan Fryslân",
+    "website": "https://beste-plakje.netlify.app/",
+    "category": {
+      "Wordpress": false,
+      "Javascript": true,
+      "React": true,
+      "Logo": true,
+      "Huisstijl": true,
+      "ReactNative": false
+    },
+    "image": "/portfolio/beste_plakje.png",
+    "description": "Deze webapplicatie was mijn eindopdracht voor de opleiding Frontend Developer. De app is gebouwd in React. Er wordt data opgehaald uit de Open WeatherMap Api en de app bevat een authenticatie-module."
+  },
+
+  {
+    "id": "4",
+    "title": "Stichting DBF",
+    "website": "https://beste-plakje.netlify.app/",
+    "category": {
+      "Wordpress": true,
+      "Javascript": false,
+      "React": false,
+      "Logo": false,
+      "Huisstijl": false,
+      "ReactNative": false
+    },
+    "image": "/portfolio/DBF.png",
+    "description": "Van Stichting DBF kreeg ik de opdracht om een nieuwe website te maken die weinig onderhoud vergt voor hen. Zij wilden een website die vooral de functie van folder kreeg; Algemene informatie over de organisatie. Daarnaast moest het bijzondere vastgoed goed uitkomen op de website. Belangrijke voorwaarden voor deze website: Etaleren van bijzonder vastgoed, algemene informatie over Stichting, Weinig onderhoud/updates en een duidelijk overzicht van beschikbare panden."
+  },
+  {
+    "id": "5",
+    "title": "Kock Volhoudbaar Advies",
+    "website": "https://kockvolhoudbaaradvies.nl/",
+    "category": {
+      "Wordpress": true,
+      "Javascript": false,
+      "React": false,
+      "Logo": true,
+      "Huisstijl": true,
+      "ReactNative": false
+    },
+    "image": "/portfolio/kva2014.png",
+    "description": "Voor het adviesbureau Kock Volhoudbaar advies mocht ik de gehele huisstijl inclusief website ontwerpen. Deze website is alweer van 2014 en momenteel bouw ik aan een nieuwe, modernere site."
+  },
+  {
+    "id": "6",
+    "title": "React Native game",
+    "website": "https://kockvolhoudbaaradvies.nl/",
+    "category": {
+      "Wordpress": false,
+      "Javascript": true,
+      "React": false,
+      "Logo": false,
+      "Huisstijl": false,
+      "ReactNative": true
+    },
+    "image": "/portfolio/kva2021.png",
+    "description": "Klein spelletje gebouwd in react native als oefening."
+  },
+  {
+    "id": "7",
+    "title": "Jodelajo 2020",
+    "website": "https://jodelajo.nl/",
+    "category": {
+      "Wordpress": true,
+      "Javascript": false,
+      "React": false,
+      "Logo": false,
+      "Huisstijl": false,
+      "ReactNative": false
+    },
+    "image": "/portfolio/jodelajo_2020.png",
+    "description": "Van Stichting DBF kreeg ik de opdracht om een nieuwe website te maken die weinig onderhoud vergt voor hen. Zij wilden een website die vooral de functie van folder kreeg; Algemene informatie over de organisatie. Daarnaast moest het bijzondere vastgoed goed uitkomen op de website. Belangrijke voorwaarden voor deze website: Etaleren van bijzonder vastgoed, algemene informatie over Stichting, Weinig onderhoud/updates en een duidelijk overzicht van beschikbare panden."
+  },
+  {
+    "id": "8",
+    "title": "Kock Volhoudbaar Advies",
+    "website": "https://kockvolhoudbaaradvies.nl/",
+    "category": {
+      "Wordpress": true,
+      "Javascript": false,
+      "React": false,
+      "Logo": true,
+      "Huisstijl": true,
+      "ReactNative": false
+    },
+    "image": "/portfolio/kva2021_page2.png",
+    "description": "Voor het adviesbureau Kock Volhoudbaar advies mocht ik de gehele huisstijl inclusief website ontwerpen. Deze website is alweer van 2014 en momenteel bouw ik aan een nieuwe, modernere site."
+  },
+  {
+    "id": "9",
+    "title": "React Native game",
+    "website": "https://kockvolhoudbaaradvies.nl/",
+    "category": {
+      "Wordpress": false,
+      "Javascript": true,
+      "React": false,
+      "Logo": false,
+      "Huisstijl": false,
+      "ReactNative": true
+    },
+    "image": "/portfolio/jodelajo_2020_2.png",
+    "description": "Klein spelletje gebouwd in react native als oefening."
+  }
+]

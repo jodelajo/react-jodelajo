@@ -1,0 +1,18 @@
+.singlePort-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: var(--colors-background);
+    max-width: 80%;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.port {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.single-img{
+    width: 70%;
+}

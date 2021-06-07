@@ -2,4 +2,9 @@
     background-color: var(--colors-primary);
     width: 100%;
     min-height: 80px;
+    position: fixed;
+    bottom: 0;
+    flex-shrink: 0;
+    z-index: 20;
+    /* border-top: 1px solid crimson; */
 }
