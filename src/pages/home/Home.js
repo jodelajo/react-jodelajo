@@ -12,7 +12,7 @@ function Home() {
           
             Ik ben 
              Frontend Developer.
-            Ik maak <Link to="/portfolioScreen" className={styles["accent"]}> websites </Link> en <span className={styles["accent"]}>webapplicaties</span> gebruikmakend van de laatste
+            Ik maak <Link to="/portfolioScreen" className={styles["accent"]}> websites </Link> en <Link to="/portfolioScreen" className={styles["accent"]}>webapplicaties</Link> gebruikmakend van de laatste
             <Link to="/portfolioScreen" className={styles["accent"]}> Javascript</Link> syntax,
             <Link to="/portfolioScreen" className={styles["accent"]}> React</Link>,{" "}
             <Link to="/portfolioScreen" className={styles["accent"]}> ReactNative</Link>, maar ook{" "}
