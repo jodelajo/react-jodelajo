@@ -1,13 +1,12 @@
 import React from "react";
 import styles from "./Home.module.css";
 import { Link } from 'react-router-dom';
-import Header from "../../components/header/Header"
 
 function Home() {
   return (
     <>
       <div className={styles["home-wrapper"]}>
-        <Header/>
+      <h1>Design <span className={styles['and']}>&</span>& Coding</h1>
         <div className={styles["main"]}>
           <p>Welkom bij jodelajo! <br/>
           

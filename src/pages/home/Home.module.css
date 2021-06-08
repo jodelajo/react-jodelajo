@@ -1,26 +1,33 @@
 
 .home-wrapper {
     display: flex;
-    width: 90%;
+    width: 100vw;
+    height: 100%;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     flex-grow: 1;
     color: rgb(124, 123, 123);
     min-height: 100%;
-    margin-bottom: 40px;
-    padding-top: 100px;
+    text-align: center;
+    
 }
 
+
+.and {
+    color: var(--colors-accent);
+}
 
 .main {
     /* border: 1px solid #000; */
     /* width: 60%; */
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 300;
     margin-bottom: 200px;
     width: 70%;
-    margin-top: 60px;
+    height: auto;
+    text-align: start;
+
 }
 
 .accent {
@@ -33,3 +40,30 @@
     color: var(--colors-accent);
     cursor: pointer;
 }
+
+@media only screen and (min-width: 576px) {
+ 
+  }
+
+  @media only screen and (min-width: 768px) {
+
+  }
+
+  @media only screen and (min-width: 992px) {
+
+  }
+
+  @media only screen and (min-width: 1200px) {
+  
+  }
+
+  @media only screen and (min-width: 1600px) {
+    .home-wrapper {
+        margin-bottom: 40px;
+        padding-top: 100px;
+        width: 90%;
+    }
+    .main {
+font-size: 4rem;
+    }
+  }

@@ -24,37 +24,38 @@ function SinglePortfolioScreen() {
     <div className={styles["singlePort-container"]}>
       <h1>{singlePort.title}</h1>
       <div className={styles["singlePort-wrapper"]}>
-        
-          <button 
+        <button
           className={styles["arrow-button"]}
-          type="button" 
-          disabled={prevPort < 1} 
-          onClick={prev}>
-            ←
-          </button>
-        <div className={styles["port"]}>
-          <img
-            src={singlePort.image}
-            alt={singlePort.title}
-            className={styles["single-img"]}
-          />
-          <div className={styles["right"]}>
-            <a href={singlePort.website} target="_blank" rel="noreferrer">
-              Website
-            </a>
-            <p>{singlePort.description}</p>
+          type="button"
+          disabled={prevPort < 1}
+          onClick={prev}
+        >
+          ←
+        </button>
+        <div className={styles["port-wrapper"]}>
+          <div className={styles["port"]}>
+            <img
+              src={singlePort.image}
+              alt={singlePort.title}
+              className={styles["single-img"]}
+            />
+            <div className={styles["right"]}>
+              <a href={singlePort.website} target="_blank" rel="noreferrer">
+                Website
+              </a>
+              <p>{singlePort.description}</p>
+            </div>
           </div>
         </div>
-        
-          <button
-           className={styles["arrow-button"]}
-            type="button"
-            disabled={thisPort >= PortfolioData.length}
-            onClick={next}
-          >
-            →
-          </button>
-        
+
+        <button
+          className={styles["arrow-button"]}
+          type="button"
+          disabled={thisPort >= PortfolioData.length}
+          onClick={next}
+        >
+          →
+        </button>
       </div>
     </div>
   );

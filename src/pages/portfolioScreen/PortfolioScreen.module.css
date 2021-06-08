@@ -1,7 +1,7 @@
 .port-container {
     width: 80%;
     height: 100%;
-    background-color: var(--colors-primary);
+    /* background-color: var(--colors-primary); */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -11,9 +11,7 @@
     margin-bottom: 160px;
     /* padding-top: 100px;   */
 }
-.port-container h1 {
-    font-size: 10rem;
-}
+
 
 .port-wrapper {
     display: flex;
@@ -22,7 +20,6 @@
     color: var(--colors-background);
     font-size: 1.6rem;
     font-weight: 200;
-    max-width: 80%;
     flex-wrap: wrap;
     gap: 20px;
     /* font-family: 'Roboto', sans-serif; */
@@ -48,8 +45,8 @@
 }
 
 .port-img {
-    width: 400px;
-    height: 230px;
+    width: 300px;
+    height: 130px;
     transition: all .3s ease-in-out;
 
 }
@@ -61,6 +58,7 @@
     margin-bottom: 100px;
     display: flex;
     column-gap: 20px;
+    flex-wrap: wrap;
 }
 
 .cat-button {
@@ -70,5 +68,19 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: 200;
-    padding: 6px 20px;
+    width: 130px;
+    padding: 6px 2px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .port-wrapper {
+        max-width: 80%;
+    }
+    .port-img {
+        width: 400px;
+        height: 213px;
+    }
 }
