@@ -23,7 +23,28 @@ function SinglePortfolioScreen() {
   return (
     <div className={styles["singlePort-container"]}>
       <h1>{singlePort.title}</h1>
+
+      <div className={styles["mobile-buttons"]}>
+      <button
+          className={styles["arrow-button"]}
+          type="button"
+          disabled={prevPort < 1}
+          onClick={prev}
+        >
+          ←
+        </button>
+        <button
+          className={styles["arrow-button"]}
+          type="button"
+          disabled={thisPort >= PortfolioData.length}
+          onClick={next}
+        >
+          →
+        </button>
+
+      </div>
       <div className={styles["singlePort-wrapper"]}>
+        <div className={styles["web-buttons"]}>
         <button
           className={styles["arrow-button"]}
           type="button"
@@ -32,6 +53,9 @@ function SinglePortfolioScreen() {
         >
           ←
         </button>
+
+        </div>
+     
         <div className={styles["port-wrapper"]}>
           <div className={styles["port"]}>
             <img
@@ -48,6 +72,7 @@ function SinglePortfolioScreen() {
           </div>
         </div>
 
+        <div className={styles["web-buttons"]}>
         <button
           className={styles["arrow-button"]}
           type="button"
@@ -56,6 +81,9 @@ function SinglePortfolioScreen() {
         >
           →
         </button>
+          
+</div>
+    
       </div>
     </div>
   );
