@@ -1,7 +1,7 @@
 .singlePort-container {
   color: var(--colors-background);
   width: 90%;
-
+  margin-top: 90px;
   flex-grow: 1;
   height: auto;
   padding: 0;
@@ -9,12 +9,14 @@
 .singlePort-container h1 {
   font-size: 2rem;
   text-align: center;
+  padding-top: 0;
 }
 
 .mobile-buttons {
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  padding-bottom: 30px;;
+  /* margin-top: 80px; */
 }
 
 .title-mob {
@@ -118,6 +120,7 @@
 
 @media only screen and (min-width: 992px) {
   .singlePort-container {
+    margin-top: 0;
     padding: 40px 0 180px 0;
   }
 
