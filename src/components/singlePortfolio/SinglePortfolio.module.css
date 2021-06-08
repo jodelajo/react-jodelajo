@@ -35,8 +35,8 @@ text-align: center;
     color: var(--colors-portfolio);
     cursor: default;
 }
-/* 
-.port-wrapper {
+
+/* .port-wrapper {
     overflow: hidden;
 } */
 
@@ -49,6 +49,7 @@ text-align: center;
     padding: 30px;
     margin: 20px;
 }
+
 
 .single-img{
     width: 66%;

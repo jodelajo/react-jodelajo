@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./PortfolioScreen.module.css";
 import portfolioData from "../../data/portfolio.json";
-import SinglePortfolio from "../../components/singlePortfolio/SinglePortfolio";
 
 function PortfolioScreen() {
   const [filteredPort, setFilteredPort] = useState(portfolioData);
