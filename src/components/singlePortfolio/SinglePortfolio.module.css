@@ -1,141 +1,161 @@
 .singlePort-container {
-    /* padding: 40px 0 180px 0; */
-    /* display: flex;
+  /* padding: 40px 0 180px 0; */
+  /* display: flex;
     flex-direction: column; */
-    color: var(--colors-background);
-    width: 100%;
-    
-    flex-grow: 1;
-    height: auto;
-    padding: 0;
+  color: var(--colors-background);
+  width: 100%;
+
+  flex-grow: 1;
+  height: auto;
+  padding: 0;
 }
 .singlePort-container h1 {
-font-size: 2rem;
-text-align: center;
-height: 60px;
+  font-size: 2rem;
+  text-align: center;
+  /* height: 60px; */
 }
 
 .mobile-buttons {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.web-buttons {
+.title-mob{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.title-mob h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.title-web {
     display: none;
 }
 
-.singlePort-wrapper {
-    display: flex;
-    /* padding: 30px; */
-    align-items: center;
-    
+.website a {
+    color: var(--colors-accent);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
+.web-buttons {
+  display: none;
+}
 
+.singlePort-wrapper {
+  display: flex;
+  /* padding: 30px; */
+  align-items: center;
+}
 
 .arrow-button {
-    font-size: 2rem;
-    border: none;
-    background-color: var(--colors-primary);
-    color: var(--colors-background);
-    cursor: pointer;
-    margin: 0;
-    /* width: 20px; */
+  font-size: 2rem;
+  border: none;
+  background-color: var(--colors-primary);
+  color: var(--colors-background);
+  cursor: pointer;
+  margin: 0;
+  /* width: 20px; */
 }
 
 .arrow-button:hover {
-    color: var(--colors-accent);
+  color: var(--colors-accent);
 }
 
 .arrow-button:disabled {
-    color: var(--colors-portfolio);
-    cursor: default;
+  color: var(--colors-portfolio);
+  cursor: default;
 }
 
 /* .port-wrapper {
     overflow: hidden;
 } */
 
-
 .port {
-    display: flex;
-    flex-direction: row;
-    /* min-width:90%; */
-    flex-wrap: wrap;
-    background-color: var(--colors-portfolio);
-    padding: 6px;
+  display: flex;
+  flex-direction: row;
+  /* min-width:90%; */
+  flex-wrap: wrap;
+  background-color: var(--colors-portfolio);
+  padding: 6px;
 }
 
-
-.single-img{
-    width: 100%;
-    height: 100%;
+.single-img {
+  width: 90%;
+  height: 90%;
+  margin: 5px auto;
 }
 .right {
-    flex-direction: column;
-    width: 90%;
-    padding: 20px;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px;
 }
 
 .right p {
-    font-size: 1rem;
-    font-weight: 200;
+  font-size: 1rem;
+  font-weight: 200;
 }
-
 
 @media only screen and (min-width: 576px) {
- 
-}
-
-@media only screen and (min-width: 768px) {
   .mobile-buttons {
+    display: none;
+  }
+
+  .title-mob {
       display: none;
   }
 
+  .title-web {
+      display: block;
+  }
+
   .web-buttons {
-      display: flex;
+    display: flex;
   }
 }
 
-@media only screen and (min-width: 992px) {
-    .singlePort-container{
-        max-width: 90%;
-        padding: 40px 0 180px 0;
-    }
-    .singlePort-container h1 {
-        font-size: 6rem;
-        height: auto;
-        }
-        .right p {
-            font-size: 2rem;
-        }
-        .arrow-button {
-            font-size: 3rem;
-        }
-      .singlePort-wrapper  {
-        padding: 30px;
-      }
-      .port {
-        padding: 30px;
-        margin: 20px;
-    }
+@media only screen and (min-width: 768px) {
+}
 
-   
+@media only screen and (min-width: 992px) {
+  .singlePort-container {
+    max-width: 90%;
+    padding: 40px 0 180px 0;
+  }
+  .singlePort-container h1 {
+    font-size: 6rem;
+    /* height: auto; */
+  }
+  .right p {
+    font-size: 2rem;
+  }
+  .arrow-button {
+    font-size: 3rem;
+  }
+  .singlePort-wrapper {
+    padding: 30px;
+  }
+  .port {
+    padding: 30px;
+    margin: 20px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
- 
 }
 
 @media only screen and (min-width: 1600px) {
-    .single-img{
-        width: 66%;
-        height: auto;
-    }
-    .right {
-        flex-direction: column;
-        width: 30%;
-        padding: 30px;
-    }
-
+  .single-img {
+    width: 66%;
+    height: auto;
+  }
+  .right {
+    flex-direction: column;
+    width: 30%;
+    padding: 30px;
+  }
 }

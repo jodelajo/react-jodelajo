@@ -22,10 +22,11 @@ function SinglePortfolioScreen() {
 
   return (
     <div className={styles["singlePort-container"]}>
-      <h1>{singlePort.title}</h1>
-
+      <div className={styles["title-web"]}>
+        <h1>{singlePort.title}</h1>
+      </div>
       <div className={styles["mobile-buttons"]}>
-      <button
+        <button
           className={styles["arrow-button"]}
           type="button"
           disabled={prevPort < 1}
@@ -41,21 +42,18 @@ function SinglePortfolioScreen() {
         >
           →
         </button>
-
       </div>
       <div className={styles["singlePort-wrapper"]}>
         <div className={styles["web-buttons"]}>
-        <button
-          className={styles["arrow-button"]}
-          type="button"
-          disabled={prevPort < 1}
-          onClick={prev}
-        >
-          ←
-        </button>
-
+          <button
+            className={styles["arrow-button"]}
+            type="button"
+            disabled={prevPort < 1}
+            onClick={prev}
+          >
+            ←
+          </button>
         </div>
-     
         <div className={styles["port-wrapper"]}>
           <div className={styles["port"]}>
             <img
@@ -64,26 +62,29 @@ function SinglePortfolioScreen() {
               className={styles["single-img"]}
             />
             <div className={styles["right"]}>
+              <div className={styles["title-mob"]}>
+                <h1>{singlePort.title}</h1>
+              </div>
+              <div className={styles["website"]}>
               <a href={singlePort.website} target="_blank" rel="noreferrer">
-                Website
+                Ga naar website →
               </a>
+              </div>
               <p>{singlePort.description}</p>
             </div>
           </div>
         </div>
 
         <div className={styles["web-buttons"]}>
-        <button
-          className={styles["arrow-button"]}
-          type="button"
-          disabled={thisPort >= PortfolioData.length}
-          onClick={next}
-        >
-          →
-        </button>
-          
-</div>
-    
+          <button
+            className={styles["arrow-button"]}
+            type="button"
+            disabled={thisPort >= PortfolioData.length}
+            onClick={next}
+          >
+            →
+          </button>
+        </div>
       </div>
     </div>
   );
