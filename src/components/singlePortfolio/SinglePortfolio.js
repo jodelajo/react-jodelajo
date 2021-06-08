@@ -1,35 +1,62 @@
-import React from "react"
-import styles from "./SinglePortfolio.module.css"
-import PortfolioData from "../../data/portfolio.json"
-import { useParams } from "react-router-dom";
-
+import React from "react";
+import styles from "./SinglePortfolio.module.css";
+import PortfolioData from "../../data/portfolio.json";
+import { useParams, useHistory } from "react-router-dom";
 
 function SinglePortfolioScreen() {
-  const { slug } = useParams()
-  const singlePort = PortfolioData[slug-1]
+  const history = useHistory();
+  const { slug } = useParams();
 
-console.log(singlePort.category);
+  const singlePort = PortfolioData[slug - 1];
+  const thisPort = parseInt(singlePort.id, 10);
+  const nextPort = thisPort + 1;
+  const prevPort = thisPort - 1;
 
+  function prev() {
+    history.push(`/singleportfolio/${prevPort}`);
+  }
 
+  function next() {
+    history.push(`/singleportfolio/${nextPort}`);
+  }
 
-
-
-    return <div className={styles["singlePort-wrapper"]}>
-
-              <h2>{singlePort.title}</h2>
-              <div className={styles["port"]}>
-              <img src={singlePort.image} alt={singlePort.title} 
-              className={styles["single-img"]}
-              />
-              <p></p>
-              <a href={singlePort.website}target="_blank" rel="noreferrer">Website</a>
-              <p>{singlePort.description}</p>
-              </div>
-            
-
-            
-
-           
+  return (
+    <div className={styles["singlePort-container"]}>
+      <h1>{singlePort.title}</h1>
+      <div className={styles["singlePort-wrapper"]}>
+        
+          <button 
+          className={styles["arrow-button"]}
+          type="button" 
+          disabled={prevPort < 1} 
+          onClick={prev}>
+            ←
+          </button>
+        <div className={styles["port"]}>
+          <img
+            src={singlePort.image}
+            alt={singlePort.title}
+            className={styles["single-img"]}
+          />
+          <div className={styles["right"]}>
+            <a href={singlePort.website} target="_blank" rel="noreferrer">
+              Website
+            </a>
+            <p>{singlePort.description}</p>
+          </div>
+        </div>
+        
+          <button
+           className={styles["arrow-button"]}
+            type="button"
+            disabled={thisPort >= PortfolioData.length}
+            onClick={next}
+          >
+            →
+          </button>
+        
+      </div>
     </div>
+  );
 }
-export default SinglePortfolioScreen
+export default SinglePortfolioScreen;

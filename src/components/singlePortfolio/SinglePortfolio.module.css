@@ -1,18 +1,66 @@
+.singlePort-container {
+    padding: 40px 0 180px 0;
+    /* display: flex;
+    flex-direction: column; */
+    color: var(--colors-background);
+    max-width: 90%;
+    flex-grow: 1;
+    height: auto;
+}
+.singlePort-container h1 {
+font-size: 6rem;
+text-align: center;
+}
+
 .singlePort-wrapper {
     display: flex;
-    flex-direction: column;
-    color: var(--colors-background);
-    max-width: 80%;
-    flex-grow: 1;
-    height: 100%;
+    padding: 30px;
+    align-items: center;
+    
 }
+
+.arrow-button {
+    font-size: 3rem;
+    border: none;
+    background-color: var(--colors-primary);
+    color: var(--colors-background);
+    cursor: pointer;
+}
+
+.arrow-button:hover {
+    color: var(--colors-accent);
+}
+
+.arrow-button:disabled {
+    color: var(--colors-portfolio);
+    cursor: default;
+}
+/* 
+.port-wrapper {
+    overflow: hidden;
+} */
+
 
 .port {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: var(--colors-portfolio);
+    padding: 30px;
+    margin: 20px;
 }
 
 .single-img{
-    width: 70%;
+    width: 66%;
+    height: auto;
+}
+.right {
+    flex-direction: column;
+    width: 30%;
+    padding: 30px;
+}
+
+.right p {
+    font-size: 2rem;
+    font-weight: 200;
 }
