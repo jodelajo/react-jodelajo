@@ -18,7 +18,8 @@ body {
 h1{
     font-size: 3.2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 600;
+    font-weight: 500;
+
     color: var(--colors-background);
 }
 
@@ -32,6 +33,7 @@ h1{
 @media only screen and (min-width: 768px) {
     h1 {
         font-size: 8rem;
+        font-weight: 600;
           }
 }
 
