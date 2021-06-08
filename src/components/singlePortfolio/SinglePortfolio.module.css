@@ -1,7 +1,4 @@
 .singlePort-container {
-  /* padding: 40px 0 180px 0; */
-  /* display: flex;
-    flex-direction: column; */
   color: var(--colors-background);
   width: 90%;
 
@@ -12,34 +9,34 @@
 .singlePort-container h1 {
   font-size: 2rem;
   text-align: center;
-  /* height: 60px; */
 }
 
 .mobile-buttons {
   display: flex;
   justify-content: center;
+  margin-top: 80px;
 }
 
-.title-mob{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+.title-mob {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .title-mob h1 {
-    font-size: 1.2rem;
-    margin-bottom: 0;
+  font-size: 1.2rem;
+  margin-bottom: 0;
 }
 
 .title-web {
-    display: none;
+  display: none;
 }
 
 .website a {
-    color: var(--colors-accent);
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 300;
+  color: var(--colors-accent);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .web-buttons {
@@ -48,7 +45,6 @@
 
 .singlePort-wrapper {
   display: flex;
-  /* padding: 30px; */
   align-items: center;
 }
 
@@ -59,7 +55,6 @@
   color: var(--colors-background);
   cursor: pointer;
   margin: 0;
-  /* width: 20px; */
 }
 
 .arrow-button:hover {
@@ -78,7 +73,6 @@
 .port {
   display: flex;
   flex-direction: row;
-  /* min-width:90%; */
   flex-wrap: wrap;
   background-color: var(--colors-portfolio);
   padding: 6px;
@@ -89,6 +83,7 @@
   height: 90%;
   margin: 5px auto;
 }
+
 .right {
   flex-direction: column;
   width: 90%;
@@ -106,11 +101,11 @@
   }
 
   .title-mob {
-      display: none;
+    display: none;
   }
 
   .title-web {
-      display: block;
+    display: block;
   }
 
   .web-buttons {
@@ -123,22 +118,25 @@
 
 @media only screen and (min-width: 992px) {
   .singlePort-container {
-    /* max-width: 90%; */
     padding: 40px 0 180px 0;
   }
+
   .singlePort-container h1 {
     font-size: 6rem;
-    /* height: auto; */
   }
+
   .right p {
     font-size: 2rem;
   }
+
   .arrow-button {
     font-size: 3rem;
   }
+
   .singlePort-wrapper {
     padding: 30px;
   }
+
   .port {
     padding: 30px;
     margin: 20px;
@@ -153,6 +151,7 @@
     width: 66%;
     height: auto;
   }
+
   .right {
     flex-direction: column;
     width: 30%;
