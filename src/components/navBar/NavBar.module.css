@@ -9,8 +9,7 @@
 }
 
 .logo-name-wrapper {
-    width: 50%;
-    /* max-height: 90px; */
+    max-width: 60%;
     display: flex;
     
 }
@@ -28,16 +27,20 @@ h2 {
 .logo {
     width: 70px;
     height: 70px;
-    margin-left: 10px;
-    
 }
 
 .hamburger-icon {
     color: var(--colors-background);
-    font-size: 3.2em;
+    font-size: 2.2em;
     margin-right: 10px;
 }
 
 .hamburger {
     display: none;
 }
+
+@media only screen and (min-width: 768px) {
+    .hamburger-icon {
+        font-size: 3.2em;
+    }
+  }

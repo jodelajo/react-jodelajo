@@ -13,15 +13,15 @@ function Home() {
             Ik ben 
              Frontend Developer.
             Ik maak <Link to="/portfolioScreen" className={styles["accent"]}> websites </Link> en <span className={styles["accent"]}>webapplicaties</span> gebruikmakend van de laatste
-            <span className={styles["accent"]}> Javascript</span> syntax,
-            <span className={styles["accent"]}> React</span>,{" "}
-            <span className={styles["accent"]}> ReactNative</span>, maar ook{" "}
-            <span className={styles["accent"]}>Wordpress</span>.
+            <Link to="/portfolioScreen" className={styles["accent"]}> Javascript</Link> syntax,
+            <Link to="/portfolioScreen" className={styles["accent"]}> React</Link>,{" "}
+            <Link to="/portfolioScreen" className={styles["accent"]}> ReactNative</Link>, maar ook{" "}
+            <Link to="/portfolioScreen" className={styles["accent"]}>Wordpress</Link>.
           
             Ook heb ik mijn certificaten behaald voor 
-            <span className={styles["accent"]}> Photoshop</span>,{" "}
-            <span className={styles["accent"]}>Illustrator</span> en{" "}
-            <span className={styles["accent"]}>InDesign</span>.
+            <Link to="/portfolioScreen" className={styles["accent"]}> Photoshop</Link>,{" "}
+            <Link to="/portfolioScreen" className={styles["accent"]}>Illustrator</Link> en{" "}
+            <Link to="/portfolioScreen" className={styles["accent"]}>InDesign</Link>.
           </p>
         </div>
       </div>
