@@ -45,6 +45,7 @@ height: 60px;
 .port {
     display: flex;
     flex-direction: row;
+    min-width: 80%;
     flex-wrap: wrap;
     background-color: var(--colors-portfolio);
     padding: 6px;
