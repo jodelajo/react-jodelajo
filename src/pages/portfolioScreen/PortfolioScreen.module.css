@@ -48,14 +48,13 @@
     width: 300px;
     height: 130px;
     transition: all .3s ease-in-out;
-
 }
 
 .port-img:hover {
     transform: scale(1.1);
 }
 .port-buttons {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     display: flex;
     column-gap: 20px;
     flex-wrap: wrap;
@@ -72,6 +71,13 @@
     padding: 6px 2px;
     cursor: pointer;
     margin: 4px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .port-buttons {
+        margin-bottom: 100px;
+    }
 }
 
 @media only screen and (min-width: 1600px) {

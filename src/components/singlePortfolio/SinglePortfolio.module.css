@@ -1,26 +1,27 @@
 .singlePort-container {
-    padding: 40px 0 180px 0;
+    /* padding: 40px 0 180px 0; */
     /* display: flex;
     flex-direction: column; */
     color: var(--colors-background);
-    max-width: 90%;
+    max-width: 100%;
     flex-grow: 1;
     height: auto;
 }
 .singlePort-container h1 {
-font-size: 6rem;
+font-size: 2rem;
 text-align: center;
+height: 60px;
 }
 
 .singlePort-wrapper {
     display: flex;
-    padding: 30px;
+    /* padding: 30px; */
     align-items: center;
     
 }
 
 .arrow-button {
-    font-size: 3rem;
+    font-size: 2rem;
     border: none;
     background-color: var(--colors-primary);
     color: var(--colors-background);
@@ -46,22 +47,73 @@ text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: var(--colors-portfolio);
-    padding: 30px;
-    margin: 20px;
+    padding: 6px;
 }
 
 
 .single-img{
-    width: 66%;
+    width: 100%;
     height: auto;
 }
 .right {
     flex-direction: column;
-    width: 30%;
-    padding: 30px;
+    width: 90%;
+    padding: 20px;
 }
 
 .right p {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 200;
+}
+
+
+@media only screen and (min-width: 576px) {
+ 
+}
+
+@media only screen and (min-width: 768px) {
+  
+}
+
+@media only screen and (min-width: 992px) {
+    .singlePort-container{
+        max-width: 90%;
+        padding: 40px 0 180px 0;
+    }
+    .singlePort-container h1 {
+        font-size: 6rem;
+        height: auto;
+        }
+        .right p {
+            font-size: 2rem;
+        }
+        .arrow-button {
+            font-size: 3rem;
+        }
+      .singlePort-wrapper  {
+        padding: 30px;
+      }
+      .port {
+        padding: 30px;
+        margin: 20px;
+    }
+
+    .single-img{
+        width: 66%;
+        height: auto;
+    }
+    .right {
+        flex-direction: column;
+        width: 30%;
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+ 
+}
+
+@media only screen and (min-width: 1600px) {
+  
+
 }
