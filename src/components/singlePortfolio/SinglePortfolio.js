@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./SinglePortfolio.module.css";
 import PortfolioData from "../../data/portfolio.json";
 import { useParams, useHistory } from "react-router-dom";
 
 function SinglePortfolioScreen() {
+  // const [categories, setCategories] = useState([]);
+  const [arrOfCats, setArrOfCats] = useState([]);
   const history = useHistory();
   const { slug } = useParams();
 
@@ -11,6 +13,24 @@ function SinglePortfolioScreen() {
   const thisPort = parseInt(singlePort.id, 10);
   const nextPort = thisPort + 1;
   const prevPort = thisPort - 1;
+
+  function cat() {
+    // setCategories(singlePort.category);
+    setArrOfCats(Object.entries(singlePort.category));
+  }
+
+  useEffect(() => {
+    cat();
+    // eslint-disable-next-line
+  }, [singlePort]);
+
+
+
+  const list = [];
+  arrOfCats.forEach((element, index) => {
+    if (element[1]) list.push(<li key={index}> <span className={styles["dot"]}>-</span> {element}</li>);
+  });
+
 
   function prev() {
     history.push(`/singleportfolio/${prevPort}`);
@@ -66,10 +86,12 @@ function SinglePortfolioScreen() {
                 <h1>{singlePort.title}</h1>
               </div>
               <div className={styles["website"]}>
-              <a href={singlePort.website} target="_blank" rel="noreferrer">
-                Ga naar website →
-              </a>
+                <a href={singlePort.website} target="_blank" rel="noreferrer">
+                  Ga naar website →
+                </a>
               </div>
+              <div className={styles["list"]}>{list}</div>
+
               <p>{singlePort.description}</p>
             </div>
           </div>

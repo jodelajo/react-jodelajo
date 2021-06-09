@@ -97,6 +97,18 @@
   font-weight: 200;
 }
 
+.list {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 200;
+  list-style-type: none;
+  color: var(--colors-content);
+}
+
+.dot {
+  color: var(--colors-accent);
+}
+
 @media only screen and (min-width: 576px) {
   .mobile-buttons {
     display: none;
@@ -143,6 +155,12 @@
   .port {
     padding: 30px;
     margin: 20px;
+  }
+
+  .list {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    list-style-type: none;
   }
 }
 
