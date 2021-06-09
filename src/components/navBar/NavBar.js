@@ -7,7 +7,7 @@ function NavBar() {
   const [checked, setChecked] = useState(false);
 
   // function handleClick() {
-  //     setChecked(!checked)
+  //   setChecked(!checked);
   // }
 
   return (
@@ -15,11 +15,10 @@ function NavBar() {
       <div className={styles["logo-name-wrapper"]}>
         <Link to="/">
           <img src={logo} alt="logo" className={styles["logo"]} />
-          </Link>
-          <h2>
-            jodelajo<span className={styles["dot"]}>.</span>
-          </h2>
-       
+        </Link>
+        <h2>
+          jodelajo<span className={styles["dot"]}>.</span>
+        </h2>
       </div>
 
       <label htmlFor="hamburger" className={styles["hamburger-icon"]}>
@@ -35,20 +34,23 @@ function NavBar() {
           setChecked(!checked);
         }}
       />
-      {/* {checked && <div id="menu">
-            <Link to="/" className="menuClass" onClick={handleClick}>Home</Link>
-            <Link to="/profile" className="menuClass" onClick={handleClick}>Instellingen</Link>
-            <Link to="contact" className="menuClass" onClick={handleClick}>Contact</Link>
-        </div>}
 
-        <div className="nav-wrapper">
-            
-            {!checked && <div id="menu-web">
-                <Link to="/" className="menuClass">Home</Link>
-                <Link to="/profile" className="menuClass">Instellingen</Link>
-                <Link to="/contact" className="menuClass">Contact</Link>
-            </div>} */}
-      {/* </div> */}
+      {checked && <div className="nav-wrapper">
+        <div id="menu-web">
+          <Link to="/" className="menuClass">
+            Home
+          </Link>
+          <Link to="/portfolioScreen" className="menuClass">
+            Portfolio
+          </Link>
+          <Link to="/about" className="menuClass">
+            Over jodelajo
+          </Link>
+          <Link to="/contact" className="menuClass">
+            Contact
+          </Link>
+        </div>
+      </div>}
     </div>
   );
 }
