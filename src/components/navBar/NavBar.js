@@ -6,9 +6,9 @@ import logo from "../../assets/images/logo300x300.png";
 function NavBar() {
   const [checked, setChecked] = useState(false);
 
-  // function handleClick() {
-  //   setChecked(!checked);
-  // }
+  function handleClick() {
+    setChecked(!checked);
+  }
 
   return (
     <div className={styles["navbar-container"]}>
@@ -35,22 +35,41 @@ function NavBar() {
         }}
       />
 
-      {checked && <div className="nav-wrapper">
-        <div id="menu-web">
-          <Link to="/" className="menuClass">
+      {checked && <div className={styles["nav-wrapper"]}>
+        
+          <Link to="/" className={styles["menuClass"]} onClick={handleClick}>
             Home
           </Link>
-          <Link to="/portfolioScreen" className="menuClass">
+          <Link to="/portfolioScreen" className={styles["menuClass"]} onClick={handleClick}>
             Portfolio
           </Link>
-          <Link to="/about" className="menuClass">
+          <Link to="/about" className={styles["menuClass"]} onClick={handleClick}>
             Over jodelajo
           </Link>
-          <Link to="/contact" className="menuClass">
+          <Link to="/contact" className={styles["menuClass"]} onClick={handleClick}>
             Contact
           </Link>
-        </div>
+       
+        
       </div>}
+
+      {!checked && <div className={styles["nav-wrapper-web"]}>
+        
+        <Link to="/" className={styles["menuClass"]}>
+          Home
+        </Link>
+        <Link to="/portfolioScreen" className={styles["menuClass"]}>
+          Portfolio
+        </Link>
+        <Link to="/about" className={styles["menuClass"]}>
+          Over jodelajo
+        </Link>
+        <Link to="/contact" className={styles["menuClass"]}>
+          Contact
+        </Link>
+     
+      
+    </div>}
     </div>
   );
 }

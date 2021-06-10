@@ -11,10 +11,20 @@
     z-index: 1;
 }
 
+.nav-wrapper {
+    display: block;
+    top: 90px;
+    right: 0;
+    width: 200px;
+    position: absolute;
+}
+
+.nav-wrapper-web {
+    display: none;
+}
+
 .logo-name-wrapper {
-    max-width: 60%;
     display: flex;
-    
 }
 
 h2 {
@@ -36,6 +46,11 @@ h2 {
     color: var(--colors-background);
     font-size: 2.2em;
     margin-right: 10px;
+    margin-bottom: 12px;
+}
+
+#hamburger {
+    display: none;
 }
 
 .hamburger {
@@ -43,23 +58,43 @@ h2 {
 }
 
 .menuClass {
-    width: 150px;
-    padding: 10px;
+    width: 200px;
+    padding: 20px 10px;
+    font-weight: 300;
     text-decoration: none;
+    color: var(--colors-background);
     text-align: center;
     box-sizing: border-box;
     display: block;
-    border-top: 2px solid #333;
-    background-color: white;
-}
-
-.menuClass:hover {
-    background: #ff0a54;
-    color: white;
+    border-bottom: 2px solid var(--colors-content);
+    background-color: var(--colors-primary);
 }
 
 @media only screen and (min-width: 768px) {
+ 
+    .nav-wrapper-web {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-wrapper {
+        display: none;
+    }
+
     .hamburger-icon {
-        font-size: 3.2em;
+        display: none;
+    }
+
+
+    .menuClass {
+        width: 120px;
+        background-color: var(--colors-primary);
+        border: none;
+        font-weight: 300;
+    }
+
+    .menuClass:hover {
+        color: var(--colors-accent);
     }
   }
