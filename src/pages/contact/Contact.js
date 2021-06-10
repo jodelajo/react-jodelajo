@@ -1,8 +1,7 @@
 import React, { useState, useRef} from "react"
 import styles from "./Contact.module.css"
 import emailjs from "emailjs-com";
-
-
+import { IoLogoGithub, IoLogoLinkedin, IoMail} from "react-icons/io5";
 
 function Contact() {
     const nameRef = useRef()
@@ -28,9 +27,9 @@ function Contact() {
 
     return <div className={styles["contact-container"]}>
    
-
+   <h1>Contactformulier</h1>
          <form onSubmit={sendEmail} className={styles["form"]}>
-            <h2>Contactformulier</h2>
+           
             <input
                 type="text"
                 name="name"
@@ -64,6 +63,11 @@ function Contact() {
             <input type="submit" value="Verzenden" className={styles["submit-send"]}/>
             {succesMessage && <p>Uw bericht is succesvol verzonden!</p>}
         </form>
+        <div className={styles["info-container"]}>
+        <p className={styles["contact-icons"]}><a href="mail.to:jodelajo@gmail.com"><IoMail /></a></p>
+        <p className={styles["contact-icons"]}><a href="https://www.linkedin.com/in/joanneke-haasbroek-77b31020/" target="_blank" rel="noreferrer"><IoLogoLinkedin /></a></p>
+        <p className={styles["contact-icons"]}><a href="https://github.com/jodelajo"target="_blank" rel="noreferrer"><IoLogoGithub/></a></p>
+        </div>
 
         </div>
 }
