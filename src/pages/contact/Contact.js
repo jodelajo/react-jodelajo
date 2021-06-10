@@ -3,6 +3,7 @@ import styles from "./Contact.module.css"
 import emailjs from "emailjs-com";
 
 
+
 function Contact() {
     const nameRef = useRef()
     const subjectRef = useRef()
@@ -26,6 +27,8 @@ function Contact() {
     }
 
     return <div className={styles["contact-container"]}>
+   
+
          <form onSubmit={sendEmail} className={styles["form"]}>
             <h2>Contactformulier</h2>
             <input
@@ -61,6 +64,7 @@ function Contact() {
             <input type="submit" value="Verzenden" className={styles["submit-send"]}/>
             {succesMessage && <p>Uw bericht is succesvol verzonden!</p>}
         </form>
+
         </div>
 }
 export default Contact
