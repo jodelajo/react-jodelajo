@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![applicatie_example](public/portfolio/screenshot_jodelajo.png)
 
-![applicatie_example](public/portfolio/screenshot_jodelajo_mob.png width="200")
+![applicatie_example](public/portfolio/screenshot_jodelajo_mob.png)
 
 
 
