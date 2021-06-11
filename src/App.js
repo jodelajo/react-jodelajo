@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState } from "react";
 import "./App.css";
+import "./theme.css";
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./components/navBar/NavBar";
 import Home from "./pages/home/Home";
@@ -10,7 +11,18 @@ import Contact from "./pages/contact/Contact";
 import Footer from "./components/footer/Footer";
 
 function App() {
+  const [theme, setTheme] = useState('light');
+
+  function themeHandler() {
+    if(theme === 'light'){
+    setTheme('dark')}
+    else {
+      setTheme('light')
+    }
+  }
+
   return (
+    <div className={`App ${theme}`}>
     <div className="app-container">
       <NavBar />
 
@@ -22,11 +34,12 @@ function App() {
         <Route path="/contact" component={Contact} />
       </Switch>
      <span className="footer">
-     <Footer />
+     <Footer themeHandler={themeHandler}/>
 
      </span>
       
       
+    </div>
     </div>
   );
 }

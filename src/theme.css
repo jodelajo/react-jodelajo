@@ -1,0 +1,17 @@
+.dark {
+    --colors-primary: #151617;
+    --colors-background: white;
+    --colors-accent: rgb(220,20,60);
+    --colors-portfolio: #222324;
+    --colors-content: rgb(124, 123, 123);
+    --colors-footer: #303031;
+}
+
+.light {
+    --colors-primary: #fff;
+    --colors-background: #151617;
+    --colors-accent: rgb(220,20,60);
+    --colors-portfolio: rgb(124, 123, 123);
+    --colors-content: #222324;
+    --colors-footer: #303031;
+}
