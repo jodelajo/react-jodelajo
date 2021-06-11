@@ -11,13 +11,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![applicatie_example](public/portfolio/double_screenshot_jodelajo.png)
 
 
-## Portfolio website:
-- Responsive
+## Portfolio website
+- Responsive (mobile first)
 - Dark/Light mode
 - portfolio met categorieen en single page
 - simpel contactformulier
 
-### Gebruikte dependencies:
+### Gebruikte dependencies
 - React-Router-dom
 - React Icons
 - Emailjs-com

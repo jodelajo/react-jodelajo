@@ -12,12 +12,15 @@ import Footer from "./components/footer/Footer";
 
 function App() {
   const [theme, setTheme] = useState("dark");
+  const [label, setLabel] = useState("Light-mode")
 
   function themeHandler() {
     if (theme === "light") {
       setTheme("dark");
+      setLabel("Light-mode")
     } else {
       setTheme("light");
+      setLabel("Dark-mode")
     }
   }
 
@@ -34,7 +37,7 @@ function App() {
           <Route path="/contact" component={Contact} />
         </Switch>
         <span className="footer">
-          <Footer themeHandler={themeHandler} />
+          <Footer themeHandler={themeHandler} label={label} />
         </span>
       </div>
     </div>

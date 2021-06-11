@@ -1,8 +1,60 @@
-button {
+/* button {
     height: 2.5rem;
     padding: 0.625rem 1rem;
     border: 0;
     background-color: var(--colors-accent);
     color: #FFF;
     cursor: pointer;
+} */
+
+  
+.switch-wrapper {
+    /* height: 60px; */
+    min-width: 100%;
+    background-color: var(--colors-accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 1; */
+    padding: 10px;
 }
+
+.switch {
+    display: none;
+}
+
+.switch-btn {
+    box-sizing: border-box;
+    position: relative;
+    outline: none;
+    width: 3rem;
+    height: 1.4rem;
+    display: block;
+    cursor: pointer;
+    background: var(--colors-background);
+    border-radius: 2rem;
+    padding: 2px;
+    transition: all .4s ease;
+}
+
+
+.switch-btn::after {
+    position: relative;
+    left: 0;
+    display: block;
+    content: "";
+    width: 40%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--colors-content);
+    transition: all .2s ease;
+}
+
+.switch:checked + .switch-btn {
+    background: var(--colors-background);
+}
+
+.switch:checked + .switch-btn::after {
+    left: 60%;
+}
+
