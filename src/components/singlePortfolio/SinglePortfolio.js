@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import styles from "./SinglePortfolio.module.css";
 import PortfolioData from "../../data/portfolio.json";
 import { useParams, useHistory } from "react-router-dom";
+import Characteristics from '../characteristics/Characteristics'
 
-function SinglePortfolioScreen() {
+function SinglePortfolio() {
   // const [categories, setCategories] = useState([]);
   const [arrOfCats, setArrOfCats] = useState([]);
   const history = useHistory();
@@ -13,6 +14,10 @@ function SinglePortfolioScreen() {
   const thisPort = parseInt(singlePort.id, 10);
   const nextPort = thisPort + 1;
   const prevPort = thisPort - 1;
+
+
+  console.log(singlePort);
+
 
   function cat() {
     // setCategories(singlePort.category);
@@ -93,6 +98,10 @@ function SinglePortfolioScreen() {
               <div className={styles["list"]}>{list}</div>
 
               <p>{singlePort.description}</p>
+            
+            </div>
+            <div>
+            <Characteristics  singlePort={singlePort}/>
             </div>
           </div>
         </div>
@@ -111,4 +120,4 @@ function SinglePortfolioScreen() {
     </div>
   );
 }
-export default SinglePortfolioScreen;
+export default SinglePortfolio;
