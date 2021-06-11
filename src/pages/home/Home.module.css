@@ -20,8 +20,8 @@
 .main {
     /* border: 1px solid #000; */
     /* width: 60%; */
-    font-size: 1.4rem;
-    font-weight: 300;
+    font-size: 1.6rem;
+    font-weight: 400;
     color: var(--colors-content);
     margin-bottom: 200px;
     width: 70%;
@@ -32,7 +32,7 @@
 
 .accent {
     color: var(--colors-background);
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -50,7 +50,12 @@
   @media only screen and (min-width: 768px) {
     .main {
         font-size: 3rem;
+        font-weight: 300;
             }
+    
+    .accent {
+        font-weight: 300;
+    }
   }
 
   @media only screen and (min-width: 992px) {

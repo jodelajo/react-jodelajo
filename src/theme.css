@@ -5,6 +5,9 @@
     --colors-portfolio: #222324;
     --colors-content: rgb(124, 123, 123);
     --colors-footer: #303031;
+    background-color: #151617;
+    min-height: 100vh;
+    height: 100%;
 }
 
 .light {
@@ -14,4 +17,17 @@
     --colors-portfolio: rgb(206, 206, 206);
     --colors-content: rgb(124, 123, 123);
     --colors-footer: #303031;
+    background-color: #fff;
+    min-height: 100vh;
+    height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .dark {
+        height: 100vh;
+    }
+
+    .light{
+        height: 100vh;
+    }
 }

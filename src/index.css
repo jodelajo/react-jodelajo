@@ -6,9 +6,6 @@
     --colors-content: rgb(124, 123, 123);
     --colors-footer: #303031;
 }
-
-
-
 body {
     margin: 0;
     padding: 0;
@@ -16,8 +13,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    background-color: var(--colors-primary);
-}
+  }
 
 h1{
     font-size: 3.2rem;

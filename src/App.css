@@ -1,5 +1,7 @@
+
 .App {
-  background-color: var(--colors-primary);
+  /* background-color: var(--colors-primary); */
+  height: 100%;
 }
 
 .app-container {

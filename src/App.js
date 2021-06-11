@@ -12,7 +12,6 @@ import Footer from "./components/footer/Footer";
 
 function App() {
   const [theme, setTheme] = useState("dark");
-  
 
   function themeHandler() {
     if (theme === "light") {
