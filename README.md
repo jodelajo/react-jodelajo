@@ -6,9 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # React responsive website
 
-![applicatie_example](public/portfolio/screenshot_jodelajo.png)
 
-![applicatie_example](public/portfolio/screenshot_jodelajo_mob.png)
+
+![applicatie_example](public/portfolio/double_screenshot_jodelajo.png)
 
 
 
