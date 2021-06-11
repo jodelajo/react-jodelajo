@@ -21,13 +21,17 @@
     min-height: 100vh;
     height: 100%;
 }
-
+/* 
 @media only screen and (min-width: 768px) {
     .dark {
-        height: 100vh;
+        min-height: 100%;
+        height: 100%;
+        
     }
 
     .light{
-        height: 100vh;
+       
+        min-height: 100%;
+        
     }
-}
+} */
