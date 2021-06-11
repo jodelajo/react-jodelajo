@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "./theme.css";
 import { Route, Switch } from "react-router-dom";
@@ -11,35 +11,32 @@ import Contact from "./pages/contact/Contact";
 import Footer from "./components/footer/Footer";
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState("dark");
 
   function themeHandler() {
-    if(theme === 'light'){
-    setTheme('dark')}
-    else {
-      setTheme('light')
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
     }
   }
 
   return (
     <div className={`App ${theme}`}>
-    <div className="app-container">
-      <NavBar />
+      <div className="app-container">
+        <NavBar />
 
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/portfolioscreen" component={PortfolioScreen} />
-        <Route path="/singleportfolio/:slug" component={SinglePortfolio} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
-     <span className="footer">
-     <Footer themeHandler={themeHandler}/>
-
-     </span>
-      
-      
-    </div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/portfolioscreen" component={PortfolioScreen} />
+          <Route path="/singleportfolio/:slug" component={SinglePortfolio} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+        <span className="footer">
+          <Footer themeHandler={themeHandler} />
+        </span>
+      </div>
     </div>
   );
 }
