@@ -1,21 +1,9 @@
-/* button {
-    height: 2.5rem;
-    padding: 0.625rem 1rem;
-    border: 0;
-    background-color: var(--colors-accent);
-    color: #FFF;
-    cursor: pointer;
-} */
-
-  
 .switch-wrapper {
-    /* height: 60px; */
     min-width: 100%;
     background-color: var(--colors-accent);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* z-index: 1; */
     padding: 10px;
 }
 
@@ -31,7 +19,7 @@
     height: 1.4rem;
     display: block;
     cursor: pointer;
-    background: var(--colors-background);
+    background: var(--colors-primary);
     border-radius: 2rem;
     padding: 2px;
     transition: all .4s ease;
@@ -51,7 +39,7 @@
 }
 
 .switch:checked + .switch-btn {
-    background: var(--colors-background);
+    background: var(--colors-primary);
 }
 
 .switch:checked + .switch-btn::after {
