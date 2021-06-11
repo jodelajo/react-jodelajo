@@ -1,6 +1,28 @@
-# Getting Started with Create React App
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/60b4deac-549d-468e-aa0e-21c40505379d/deploy-status)](https://app.netlify.com/sites/react-jodelajo/deploys)
+
+# React responsive website
+
+![applicatie_example](public/portfolio/screenshot_jodelajo.png)
+
+![applicatie_example](public/portfolio/screenshot_jodelajo_mob.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Available Scripts
 

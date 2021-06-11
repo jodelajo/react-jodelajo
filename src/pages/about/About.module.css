@@ -1,4 +1,11 @@
 .about-container {
     margin-top: 100px;
+    width: 90%;
     color: var(--colors-background);
+}
+
+.about-container p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--colors-content);
 }
