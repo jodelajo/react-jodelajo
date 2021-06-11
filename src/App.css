@@ -14,7 +14,8 @@
 }
 
 .footer {
-  display: none;
+  display: flex;
+  width: 100%;
 }
 
 @media only screen and (min-width: 576px) {
@@ -25,10 +26,10 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .footer {
+    /* .footer {
         width: 100%;
-      display: flex;
-    }
+      
+    } */
 }
 
 @media only screen and (min-width: 992px) {

@@ -2,7 +2,7 @@ import React, { useState} from 'react';
 import styles from "./ThemeButton.module.css";
 
 
-function ThemeButton({ label, onClick}) {
+function ThemeButton({ onClick }) {
     const [checked, toggleChecked] = useState(false)
 
     function handleChecked() {
@@ -16,7 +16,7 @@ function ThemeButton({ label, onClick}) {
             type="checkbox"
             className={styles["switch"]}
             id="switch"
-            name={label}
+            // name={label}
             onClick={handleChecked}
         />
 

@@ -3,14 +3,14 @@ import styles from "./Footer.module.css";
 import { IoLogoGithub, IoLogoLinkedin, IoMail } from "react-icons/io5";
 import ThemeButton from "../themeButton/ThemeButton";
 
-function Footer({ themeHandler, label }) {
+function Footer({ themeHandler}) {
   const day = new Date();
   const year = day.getFullYear();
 
   return (
     <div className={styles["footer-container"]}>
       <div className={styles.buttonContainer}>
-        <ThemeButton  onClick={themeHandler}  label={label}/>
+        <ThemeButton  onClick={themeHandler} />
       </div>
 
       <div className={styles["info-container"]}>
