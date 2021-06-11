@@ -7,7 +7,6 @@
     --colors-footer: #303031;
     background-color: #151617;
     min-height: 100vh;
-    height: 100%;
 }
 
 .light {
@@ -19,19 +18,4 @@
     --colors-footer: #303031;
     background-color: #fff;
     min-height: 100vh;
-    height: 100%;
 }
-/* 
-@media only screen and (min-width: 768px) {
-    .dark {
-        min-height: 100%;
-        height: 100%;
-        
-    }
-
-    .light{
-       
-        min-height: 100%;
-        
-    }
-} */

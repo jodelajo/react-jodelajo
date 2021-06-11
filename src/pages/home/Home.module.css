@@ -1,78 +1,70 @@
-
 .home-wrapper {
-    display: flex;
-    width: 100vw;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    min-height: 100%;
-    text-align: center;
-    
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  min-height: 100%;
+  text-align: center;
 }
 
-
 .and {
-    color: var(--colors-accent);
+  color: var(--colors-accent);
 }
 
 .main {
-    /* border: 1px solid #000; */
-    /* width: 60%; */
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: var(--colors-content);
-    margin-bottom: 200px;
-    width: 70%;
-    height: auto;
-    text-align: start;
-
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--colors-content);
+  margin-bottom: 200px;
+  width: 70%;
+  height: auto;
+  text-align: start;
 }
 
 .accent {
-    color: var(--colors-background);
-    font-weight: 400;
-    text-decoration: none;
+  color: var(--colors-background);
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .accent:hover {
-    color: var(--colors-accent);
-    cursor: pointer;
+  color: var(--colors-accent);
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 576px) {
-    .main {
-        font-size: 2rem;
-            }
+  .main {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    font-size: 3rem;
+    font-weight: 300;
   }
 
-  @media only screen and (min-width: 768px) {
-    .main {
-        font-size: 3rem;
-        font-weight: 300;
-            }
-    
-    .accent {
-        font-weight: 300;
-    }
+  .accent {
+    font-weight: 300;
   }
+}
 
-  @media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
+}
 
+@media only screen and (min-width: 1200px) {
+  .main {
+    font-size: 4rem;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
-    .main {
-        font-size: 4rem;
-            }
+@media only screen and (min-width: 1600px) {
+  .home-wrapper {
+    margin-bottom: 40px;
+    padding-top: 100px;
+    width: 90%;
   }
-
-  @media only screen and (min-width: 1600px) {
-    .home-wrapper {
-        margin-bottom: 40px;
-        padding-top: 100px;
-        width: 90%;
-    }
-  
-  }
+}
