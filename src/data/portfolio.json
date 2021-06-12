@@ -1,20 +1,20 @@
 [
   {
     "id": "1",
-    "title": "De Haringvrouw",
-    "website": "https://haringvrouw.nl/",
-    "github": null,
+    "title": "Bêste plakje fan Fryslân",
+    "website": "https://beste-plakje.netlify.app/",
+    "github": "https://github.com/jodelajo/react-my-app",
     "category": {
-      "Wordpress": true,
-      "Javascript": false,
-      "React": false,
+      "Wordpress": false,
+      "Javascript": true,
+      "React": true,
       "Logo": true,
       "Huisstijl": true,
       "ReactNative": false
     },
-    "image": "/portfolio/haringvrouw.png",
-    "description": "De Haringvrouw is een webshop. De site is Mobile First ontworpen; dat betekent dat de basis van de site in eerste instantie gemaakt is voor mobile devices. Voor deze website waren belangrijk: shop Duidelijke en herkenbare look & feel. Zeer geschikt voor kleinere beeldschermen.",
-    "kenmerken": ["responsive", "mobile-first", "woo-commerce"]
+    "image": "/portfolio/beste_plakje.png",
+    "description": "Deze webapplicatie was mijn eindopdracht voor de opleiding Frontend Developer.  De app is een weer-app, die op basis van een puntensysteem bepaalt op welke locatie momenteel het weer het beste is in Friesland. Vervolgens toont de app het dichtstbijzijnde terras.  Je kunt de app aanpassen door gebruik te maken van Boosters. Zo kun je extra punten geven voor 'temperatuur', 'zon' en/of 'windkracht'. De gebruiker dient een account aan te maken en in te loggen om gebruik te kunnen maken van de app. " ,
+    "kenmerken": ["Weer-app, Gebruikmakend van OpenWeatherMap API", "Met extra Boosters voor persoonlijke voorkeuren", "Privateroute en Firebase-authenticatie voor log-in", "Responsive", "Mobile-first", "Photoshop", "Illustrator"]
   },
   {
     "id": "2",
@@ -31,26 +31,25 @@
     },
     "image": "/portfolio/tentopvlie.png",
     "description": "Deze website is gemaakt om een vakantielocatie te verhuren. In dit geval een tent op Vlieland. Belangrijke voorwaarden voor de site waren: verleidelijk/sfeer, informatief, boekingssysteem. De site staat hoog in de zoekmachines met de woorden “tent te huur Vlieland”.",
-    "kenmerken": ["informatief", "boekingssysteem", "SEO-optimalisatie"]
+    "kenmerken": ["Informatief", "Boekingssysteem", "SEO-optimalisatie"]
   },
   {
     "id": "3",
-    "title": "Bêste plakje fan Fryslân",
-    "website": "https://beste-plakje.netlify.app/",
-    "github": "https://github.com/jodelajo/react-my-app",
+    "title": "De Haringvrouw",
+    "website": "https://haringvrouw.nl/",
+    "github": null,
     "category": {
-      "Wordpress": false,
-      "Javascript": true,
-      "React": true,
+      "Wordpress": true,
+      "Javascript": false,
+      "React": false,
       "Logo": true,
       "Huisstijl": true,
       "ReactNative": false
     },
-    "image": "/portfolio/beste_plakje.png",
-    "description": "Deze webapplicatie was mijn eindopdracht voor de opleiding Frontend Developer. De app is gebouwd in React. Er wordt data opgehaald uit de Open WeatherMap Api en de app bevat een authenticatie-module.",
-    "kenmerken": ["weerapplicatie die de beste locatie in Friesland aangeeft, met dichtstbijzijnde terras", "met extra Boosters voor persoonlijke voorkeuren", "Privateroute en Firebase-authenticatie voor log-in", "responsive", "mobile-first"]
+    "image": "/portfolio/haringvrouw.png",
+    "description": "De Haringvrouw is een webshop. De site is Mobile First ontworpen; dat betekent dat de basis van de site in eerste instantie gemaakt is voor mobile devices. Voor deze website waren belangrijk: shop Duidelijke en herkenbare look & feel. Zeer geschikt voor kleinere beeldschermen.",
+    "kenmerken": ["Responsive", "Mobile-first", "Woo-Commerce"]
   },
-
   {
     "id": "4",
     "title": "Stichting DBF",
@@ -66,7 +65,7 @@
     },
     "image": "/portfolio/DBF.png",
     "description": "Van Stichting DBF kreeg ik de opdracht om een nieuwe website te maken die weinig onderhoud vergt voor hen. Zij wilden een website die vooral de functie van folder kreeg; Algemene informatie over de organisatie. Daarnaast moest het bijzondere vastgoed goed uitkomen op de website. De website biedt ook een actueel overzicht van beschikbare panden.",
-    "kenmerken": ["responsive", "mobile-first", "woo-commerce"]
+    "kenmerken": ["Stijlvolle folder-website", "Actueel aanbod vastgoed"]
   },
   {
     "id": "5",
@@ -83,7 +82,7 @@
     },
     "image": "/portfolio/kva2014.png",
     "description": "Voor het adviesbureau Kock Volhoudbaar advies mocht ik de gehele huisstijl inclusief website ontwerpen. Deze website is alweer van 2014 en momenteel bouw ik aan een nieuwe, modernere site.",
-    "kenmerken": ["responsive", "mobile-first", "woo-commerce"]
+    "kenmerken": ["Responsive"]
   },
   {
     "id": "6",
@@ -98,9 +97,9 @@
       "Huisstijl": false,
       "ReactNative": true
     },
-    "image": "/portfolio/kva2021.png",
-    "description": "Klein spelletje gebouwd in react native als oefening.",
-    "kenmerken": ["responsive", "mobile-first", "woo-commerce"]
+    "image": "/portfolio/react_native_app.png",
+    "description": "Klein spelletje gebouwd in react native als oefening: Gebruiker kiest getal en de app moet raden welk. Gebruiker geeft hints als 'lager' of 'hoger'. Het spelletje is over als de app het getal goed heeft geraden.",
+    "kenmerken": ["Geschikt voor Android en Apple", "Oefening met React Native"]
   },
   {
     "id": "7",
@@ -117,7 +116,7 @@
     },
     "image": "/portfolio/jodelajo_2020.png",
     "description": "Mijn laatste website in wordpress gemaakt. Voor het ontwerp van deze site heb ik veel gebruik gemaakt van Photoshop en Illustrator.",
-    "kenmerken": ["responsive", "mobile-first", "woo-commerce"]
+    "kenmerken": ["Responsive", "Photoshop", "Illustrator"]
   },
   {
     "id": "8",
@@ -132,25 +131,25 @@
       "Huisstijl": true,
       "ReactNative": false
     },
-    "image": "/portfolio/kva2021_page2.png",
+    "image": "/portfolio/kva2021.png",
     "description": "Voor het adviesbureau Kock Volhoudbaar advies mocht ik de gehele huisstijl inclusief website ontwerpen. Deze website is alweer van 2014 en momenteel bouw ik aan een nieuwe, modernere site.",
-    "kenmerken": ["responsive", "mobile-first", "woo-commerce"]
+    "kenmerken": ["Responsive"]
   },
   {
     "id": "9",
-    "title": "React Native game",
-    "website": "https://kockvolhoudbaaradvies.nl/",
-    "github": "https://github.com/jodelajo/react-native-second-app",
+    "title": "Glampingkast",
+    "website": "https://jodelajo.nl/",
+    "github": null,
     "category": {
       "Wordpress": false,
-      "Javascript": true,
+      "Javascript": false,
       "React": false,
       "Logo": false,
       "Huisstijl": false,
-      "ReactNative": true
+      "ReactNative": false
     },
-    "image": "/portfolio/jodelajo_2020_2.png",
-    "description": "Klein spelletje gebouwd in react native als oefening.",
-    "kenmerken": ["responsive", "mobile-first", "woo-commerce"]
+    "image": "/portfolio/kasttent.png",
+    "description": "Opvouwbare kast ontworpen en gebouwd. Een kast met allure voor op de camping. Ongedierte-proof. Opzetten en afbreken zonder gereedschap.",
+    "kenmerken": ["Opvouwbaar", "Stevige kwaliteit", "Ongedierte-proof"]
   }
 ]
