@@ -104,7 +104,7 @@
   flex-direction: column;
   align-items: center;
   width: 90%;
-  padding: 10px;
+  /* padding: 10px; */
   margin: 0 auto;
 }
 
@@ -185,9 +185,9 @@
     padding: 30px;
     margin: 20px;
   }
-  .right {
+  /* .right {
     padding: 20px;
-  }
+  } */
 
   .list {
     margin-top: 20px;
@@ -208,6 +208,6 @@
   .right {
     flex-direction: column;
     width: 30%;
-    padding: 30px;
+    /* padding: 30px; */
   }
 }

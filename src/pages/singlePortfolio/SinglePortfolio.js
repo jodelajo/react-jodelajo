@@ -90,9 +90,11 @@ function SinglePortfolio() {
                 <h1>{singlePort.title}</h1>
               </div>
               <div className={styles["website"]}>
-              {singlePort.website && <a href={singlePort.website} target="_blank" rel="noreferrer">
-                  <CgWebsite /> Ga naar website
-                </a>}
+                {singlePort.website && (
+                  <a href={singlePort.website} target="_blank" rel="noreferrer">
+                    <CgWebsite /> Ga naar website
+                  </a>
+                )}
                 {singlePort.github && (
                   <a href={singlePort.github} target="_blank" rel="noreferrer">
                     <IoLogoGithub /> Ga naar github
@@ -102,9 +104,11 @@ function SinglePortfolio() {
               <div className={styles["list"]}>{list}</div>
 
               <p>{singlePort.description}</p>
-              <span>Kenmerken</span>
-              <span className={styles.char}> <Characteristics singlePort={singlePort} />
-                </span>
+              {singlePort.kenmerken && <><span>Kenmerken</span>
+              <span className={styles.char}>
+                {" "}
+                <Characteristics singlePort={singlePort} />
+              </span></>}
             </div>
           </div>
         </div>
