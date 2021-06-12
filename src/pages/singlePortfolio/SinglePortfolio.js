@@ -90,9 +90,9 @@ function SinglePortfolio() {
                 <h1>{singlePort.title}</h1>
               </div>
               <div className={styles["website"]}>
-                <a href={singlePort.website} target="_blank" rel="noreferrer">
+              {singlePort.website && <a href={singlePort.website} target="_blank" rel="noreferrer">
                   <CgWebsite /> Ga naar website
-                </a>
+                </a>}
                 {singlePort.github && (
                   <a href={singlePort.github} target="_blank" rel="noreferrer">
                     <IoLogoGithub /> Ga naar github
