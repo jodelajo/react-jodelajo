@@ -8,6 +8,10 @@
   margin-bottom: 160px;
 }
 
+.port-container h1 {
+  font-size: 2rem;
+}
+
 .port-wrapper {
   display: flex;
   flex-direction: row;
@@ -67,12 +71,23 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .port-container h1 {
+    font-size: 4rem;
+  }
   .port-buttons {
     margin-bottom: 100px;
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .port-container h1 {
+    font-size: 5rem;
+  }
+}
 @media only screen and (min-width: 1600px) {
+  .port-container h1 {
+    font-size: 6rem;
+  }
   .port-wrapper {
     max-width: 80%;
   }

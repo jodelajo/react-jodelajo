@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    font-size: 0.6em;
 }
 
 .nav-wrapper {
@@ -70,7 +71,7 @@ h2 {
     background-color: var(--colors-primary);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
  
     .nav-wrapper-web {
         box-sizing: border-box;
@@ -96,4 +97,12 @@ h2 {
     .menuClass:hover {
         color: var(--colors-accent);
     }
+  }
+  @media only screen and (min-width: 1600px) {
+      .navbar-container {
+          font-size: 1.2rem;
+      }
+     .menuClass {
+         width: 160px;
+     }
   }

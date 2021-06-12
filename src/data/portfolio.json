@@ -1,9 +1,9 @@
 [
   {
     "id": "1",
-    "class": "a",
     "title": "De Haringvrouw",
     "website": "https://haringvrouw.nl/",
+    "github": null,
     "category": {
       "Wordpress": true,
       "Javascript": false,
@@ -18,9 +18,9 @@
   },
   {
     "id": "2",
-    "class": "b",
     "title": "Tent op Vlie",
     "website": "https://tentopvlie.nl/",
+    "github": null,
     "category": {
       "Wordpress": true,
       "Javascript": false,
@@ -31,13 +31,13 @@
     },
     "image": "/portfolio/tentopvlie.png",
     "description": "Deze website is gemaakt om een vakantielocatie te verhuren. In dit geval een tent op Vlieland. Belangrijke voorwaarden voor de site waren: verleidelijk/sfeer, informatief, boekingssysteem. De site staat hoog in de zoekmachines met de woorden “tent te huur Vlieland”.",
-    "kenmerken": ["responsive", "mobile-first", "woo-commerce"]
+    "kenmerken": ["informatief", "boekingssysteem", "SEO-optimalisatie"]
   },
   {
     "id": "3",
-    "class": "c",
     "title": "Bêste plakje fan Fryslân",
     "website": "https://beste-plakje.netlify.app/",
+    "github": "https://github.com/jodelajo/react-my-app",
     "category": {
       "Wordpress": false,
       "Javascript": true,
@@ -48,14 +48,14 @@
     },
     "image": "/portfolio/beste_plakje.png",
     "description": "Deze webapplicatie was mijn eindopdracht voor de opleiding Frontend Developer. De app is gebouwd in React. Er wordt data opgehaald uit de Open WeatherMap Api en de app bevat een authenticatie-module.",
-    "kenmerken": ["responsive", "mobile-first", "woo-commerce"]
+    "kenmerken": ["weerapplicatie die de beste locatie in Friesland aangeeft, met dichtstbijzijnde terras", "met extra Boosters voor persoonlijke voorkeuren", "Privateroute en Firebase-authenticatie voor log-in", "responsive", "mobile-first"]
   },
 
   {
     "id": "4",
-    "class": "d",
     "title": "Stichting DBF",
-    "website": "https://beste-plakje.netlify.app/",
+    "website": "https://stichtingdbf.nl/",
+    "github": null,
     "category": {
       "Wordpress": true,
       "Javascript": false,
@@ -70,9 +70,9 @@
   },
   {
     "id": "5",
-    "class": "e",
     "title": "Kock Volhoudbaar Advies",
     "website": "https://kockvolhoudbaaradvies.nl/",
+    "github": null,
     "category": {
       "Wordpress": true,
       "Javascript": false,
@@ -87,9 +87,9 @@
   },
   {
     "id": "6",
-    "class": "f",
     "title": "React Native game",
     "website": "https://kockvolhoudbaaradvies.nl/",
+    "github": "https://github.com/jodelajo/react-native-second-app",
     "category": {
       "Wordpress": false,
       "Javascript": true,
@@ -104,9 +104,9 @@
   },
   {
     "id": "7",
-    "class": "g",
     "title": "Jodelajo 2020",
     "website": "https://jodelajo.nl/",
+    "github": null,
     "category": {
       "Wordpress": true,
       "Javascript": false,
@@ -121,9 +121,9 @@
   },
   {
     "id": "8",
-    "class": "h",
     "title": "Kock Volhoudbaar Advies",
     "website": "https://kockvolhoudbaaradvies.nl/",
+    "github": null,
     "category": {
       "Wordpress": true,
       "Javascript": false,
@@ -138,9 +138,9 @@
   },
   {
     "id": "9",
-    "class": "i",
     "title": "React Native game",
     "website": "https://kockvolhoudbaaradvies.nl/",
+    "github": "https://github.com/jodelajo/react-native-second-app",
     "category": {
       "Wordpress": false,
       "Javascript": true,

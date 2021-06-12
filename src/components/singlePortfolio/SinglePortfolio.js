@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import styles from "./SinglePortfolio.module.css";
 import PortfolioData from "../../data/portfolio.json";
 import { useParams, useHistory } from "react-router-dom";
-import Characteristics from '../characteristics/Characteristics'
+import Characteristics from "../characteristics/Characteristics";
+import { IoLogoGithub } from "react-icons/io5";
+import { CgWebsite } from "react-icons/cg";
 
 function SinglePortfolio() {
-  // const [categories, setCategories] = useState([]);
   const [arrOfCats, setArrOfCats] = useState([]);
   const history = useHistory();
   const { slug } = useParams();
@@ -15,12 +16,7 @@ function SinglePortfolio() {
   const nextPort = thisPort + 1;
   const prevPort = thisPort - 1;
 
-
-  console.log(singlePort);
-
-
   function cat() {
-    // setCategories(singlePort.category);
     setArrOfCats(Object.entries(singlePort.category));
   }
 
@@ -29,13 +25,16 @@ function SinglePortfolio() {
     // eslint-disable-next-line
   }, [singlePort]);
 
-
-
   const list = [];
   arrOfCats.forEach((element, index) => {
-    if (element[1]) list.push(<li key={index}> <span className={styles["dot"]}>-</span> {element}</li>);
+    if (element[1])
+      list.push(
+        <li key={index}>
+          {" "}
+          <span className={styles["dot"]}>-</span> {element}
+        </li>
+      );
   });
-
 
   function prev() {
     history.push(`/singleportfolio/${prevPort}`);
@@ -92,16 +91,20 @@ function SinglePortfolio() {
               </div>
               <div className={styles["website"]}>
                 <a href={singlePort.website} target="_blank" rel="noreferrer">
-                  Ga naar website →
+                  <CgWebsite /> Ga naar website
                 </a>
+                {singlePort.github && (
+                  <a href={singlePort.github} target="_blank" rel="noreferrer">
+                    <IoLogoGithub /> Ga naar github
+                  </a>
+                )}
               </div>
               <div className={styles["list"]}>{list}</div>
 
               <p>{singlePort.description}</p>
-            
-            </div>
-            <div>
-            <Characteristics  singlePort={singlePort}/>
+              <span>Kenmerken</span>
+              <span className={styles.char}> <Characteristics singlePort={singlePort} />
+                </span>
             </div>
           </div>
         </div>

@@ -42,11 +42,16 @@
   display: none;
 }
 
+.website {
+  display: flex;
+  flex-direction: column;
+}
+
 .website a {
   color: var(--colors-accent);
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 300;
+  /* font-size: 1.2rem; */
+  /* font-weight: 300; */
 }
 
 .web-buttons {
@@ -55,7 +60,7 @@
 
 .singlePort-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .arrow-button {
@@ -101,13 +106,13 @@
 }
 
 .right p {
-  font-size: 1rem;
-  font-weight: 200;
+  /* font-size: 1rem; */
+  font-weight: 400;
 }
 
 .list {
   margin-top: 20px;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   font-weight: 400;
   list-style-type: none;
   color: var(--colors-content);
@@ -115,6 +120,10 @@
 
 .dot {
   color: var(--colors-accent);
+}
+.char {
+  font-weight: 300;
+  font-size: 1.3rem;
 }
 
 @media only screen and (min-width: 576px) {
@@ -132,6 +141,7 @@
 
   .web-buttons {
     display: flex;
+    margin-top: 250px;
   }
 
   .single-img {
@@ -140,6 +150,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .right p {
+    font-size: 2rem;
+    font-weight: 300;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -149,12 +163,10 @@
   }
 
   .singlePort-container h1 {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
-  .right p {
-    font-size: 2rem;
-  }
+
 
   .arrow-button {
     font-size: 3rem;

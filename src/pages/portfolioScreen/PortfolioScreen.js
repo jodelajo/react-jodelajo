@@ -5,7 +5,6 @@ import portfolioData from "../../data/portfolio.json";
 
 function PortfolioScreen() {
   const [filteredPort, setFilteredPort] = useState(portfolioData);
-  console.log(filteredPort);
 
   function handeClickAll() {
     setFilteredPort(portfolioData);
