@@ -5,6 +5,9 @@
   justify-content: flex-start;
   align-items: center;
 }
+.contact-container h1 {
+    font-size: 2rem;
+}
 
 .form {
   display: flex;
