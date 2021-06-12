@@ -14,11 +14,11 @@ function About() {
         <h3>Design <span className={styles.red}>&</span>& Coding</h3>
         <p>Het afgelopen jaar heb ik mij volledig toegelegd op het ontwikkelen van skills en kennis op het gebied van Frontend Development en vormgeving. Ik heb voor voor <span className={styles.accent}>Adobe Photoshop</span>, <span className={styles.accent}>Illustrator</span> en <span className={styles.accent}>InDesign</span> mijn <span className={styles.accent}>MBO-certificaten</span> behaald en momenteel wacht ik op de uitslag van mijn eindopdracht van de opleiding <span className={styles.accent}>Frontend Development</span> aan de <span className={styles.accent}>Novi Hogeschool</span> in Utrecht.</p>
 
-        <p>Ik vind het snijvlak van design en coderen het allerleukst. <span className={styles.accent}>Pixelperfect
+        <p>Ik vind het <span className={styles.accent}>snijvlak van design en coderen</span> het allerleukst. <span className={styles.accent}>Pixelperfect
         </span> en <span className={styles.accent}>gebruikersvriendelijk</span> met een <span className={styles.accent}>karaktervolle uitstraling</span>.</p>
 
-        <p>Na jaren te hebben gewerkt als <span className={styles.accent}>zelfstandig projectmedewerker</span> bij een <span className={styles.accent}>maatschappelijke stichting</span>, was ik niet meer gelukkig in mijn werk. Ik had al een opleiding Webdesign afgerond in 2009 waar ik veel plezier aan had beleefd. Al ruim 20 jaar werk ik met Photoshop. </p>
-        <p>Spreekt dit je aan? Dan kun je altijd <Link to="/contact" className={styles.accentLink}>contact</Link> opnemen voor een nadere <span className={styles.accent}>kennismaking</span>.</p>
+        <p>Na ruim 10 jaar te hebben gewerkt als <span className={styles.accent}>adviseur</span> bij een <span className={styles.accent}>maatschappelijke stichting</span>, was ik niet meer gelukkig in mijn werk. Ik had al een opleiding Webdesign afgerond in 2009 waar ik veel plezier aan had beleefd. Ook werk ik al ruim 20 jaar met Photoshop. </p>
+        <p>Spreekt dit je aan? Dan kun je altijd <Link to="/contact" className={styles.accentLink}>contact</Link> opnemen voor een <span className={styles.accent}>nadere kennismaking</span>.</p>
    
     </div>
   );
