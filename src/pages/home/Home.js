@@ -18,7 +18,7 @@ function Home() {
             <Link to="/portfolioScreen" className={styles["accent"]}> ReactNative</Link>, maar ook{" "}
             <Link to="/portfolioScreen" className={styles["accent"]}>Wordpress</Link>.
           
-            Ook heb ik mijn certificaten behaald voor 
+            Daarnaast ben ik gediplomeerd in 
             <Link to="/portfolioScreen" className={styles["accent"]}> Photoshop</Link>,{" "}
             <Link to="/portfolioScreen" className={styles["accent"]}>Illustrator</Link> en{" "}
             <Link to="/portfolioScreen" className={styles["accent"]}>InDesign</Link>.

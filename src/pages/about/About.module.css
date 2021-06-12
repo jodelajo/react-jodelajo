@@ -33,6 +33,15 @@ h3 {
   text-decoration: none;
 }
 
+.accentLink {
+  color: var(--colors-background);
+  text-decoration: none;
+}
+
+.accentLink:hover {
+  color: var(--colors-accent);
+}
+
 @media only screen and (min-width: 768px) {
   .about-container h1 {
     font-size: 4rem;
@@ -52,10 +61,10 @@ h3 {
   .about-container h1 {
     font-size: 5rem;
   }
- 
-h3 {
-  font-size: 3rem;
-}
+
+  h3 {
+    font-size: 3rem;
+  }
   .about-container p {
     font-size: 2.2rem;
     font-weight: 300;
