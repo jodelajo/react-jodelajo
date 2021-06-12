@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./SinglePortfolio.module.css";
 import PortfolioData from "../../data/portfolio.json";
 import { useParams, useHistory } from "react-router-dom";
-import Characteristics from "../characteristics/Characteristics";
+import Characteristics from "../../components/characteristics/Characteristics";
 import { IoLogoGithub } from "react-icons/io5";
 import { CgWebsite } from "react-icons/cg";
 
