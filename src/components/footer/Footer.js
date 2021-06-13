@@ -3,16 +3,15 @@ import styles from "./Footer.module.css";
 import { IoLogoGithub, IoLogoLinkedin, IoMail } from "react-icons/io5";
 import ThemeButton from "../themeButton/ThemeButton";
 
-function Footer({ themeHandler}) {
+function Footer({ themeHandler }) {
   const day = new Date();
   const year = day.getFullYear();
 
   return (
     <div className={styles["footer-container"]}>
       <div className={styles.buttonContainer}>
-        <ThemeButton  onClick={themeHandler} />
+        <ThemeButton onClick={themeHandler} />
       </div>
-
       <div className={styles["info-container"]}>
         <p className={styles["contact-text"]}>
           GirlPowered by: jodelajo {year}
@@ -20,7 +19,7 @@ function Footer({ themeHandler}) {
         <div className={styles.icons}>
           <span className={styles["contact-icons"]}>
             <a href="mail.to:jodelajo@gmail.com">
-              <IoMail />
+              <IoMail className={styles.mail} />
             </a>
           </span>
           <span className={styles["contact-icons"]}>

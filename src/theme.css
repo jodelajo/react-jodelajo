@@ -1,21 +1,21 @@
 .dark {
-    --colors-primary: #151617;
-    --colors-background: white;
-    --colors-accent: rgb(220,20,60);
-    --colors-portfolio: #222324;
-    --colors-content: rgb(124, 123, 123);
-    --colors-footer: #303031;
-    background-color: #151617;
-    min-height: 100vh;
+  --colors-primary: #151617;
+  --colors-background: white;
+  --colors-accent: rgb(220, 20, 60);
+  --colors-portfolio: #222324;
+  --colors-content: rgb(124, 123, 123);
+  --colors-footer: #303031;
+  background-color: #151617;
+  min-height: 100vh;
 }
 
 .light {
-    --colors-primary: #fff;
-    --colors-background: #151617;
-    --colors-accent: rgb(220,20,60);
-    --colors-portfolio: rgb(206, 206, 206);
-    --colors-content: rgb(124, 123, 123);
-    --colors-footer: #303031;
-    background-color: #fff;
-    min-height: 100vh;
+  --colors-primary: #fff;
+  --colors-background: #151617;
+  --colors-accent: rgb(220, 20, 60);
+  --colors-portfolio: rgb(206, 206, 206);
+  --colors-content: rgb(124, 123, 123);
+  --colors-footer: #303031;
+  background-color: #fff;
+  min-height: 100vh;
 }

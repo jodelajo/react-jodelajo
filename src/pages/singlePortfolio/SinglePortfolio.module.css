@@ -36,7 +36,6 @@
 .title-mob h1 {
   font-size: 1.2rem;
   margin-bottom: 0;
-  
 }
 
 .title-web {
@@ -51,8 +50,6 @@
 .website a {
   color: var(--colors-accent);
   text-decoration: none;
-  /* font-size: 1.2rem; */
-  /* font-weight: 300; */
 }
 
 .web-buttons {
@@ -82,10 +79,6 @@
   cursor: default;
 }
 
-/* .port-wrapper {
-    overflow: hidden;
-} */
-
 .port {
   display: flex;
   flex-direction: row;
@@ -104,18 +97,15 @@
   flex-direction: column;
   align-items: center;
   width: 90%;
-  /* padding: 10px; */
   margin: 0 auto;
 }
 
 .right p {
-  /* font-size: 1rem; */
   font-weight: 400;
 }
 
 .list {
   margin-top: 20px;
-  /* font-size: 1rem; */
   font-weight: 400;
   list-style-type: none;
   color: var(--colors-content);
@@ -171,8 +161,6 @@
     margin-top: -20px;
   }
 
-
-
   .arrow-button {
     font-size: 3rem;
   }
@@ -185,9 +173,6 @@
     padding: 30px;
     margin: 20px;
   }
-  /* .right {
-    padding: 20px;
-  } */
 
   .list {
     margin-top: 20px;
@@ -208,6 +193,5 @@
   .right {
     flex-direction: column;
     width: 30%;
-    /* padding: 30px; */
   }
 }

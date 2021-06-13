@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
 function Characteristics({ singlePort }) {
-
-    return <div>
-       {singlePort.kenmerken && singlePort.kenmerken.map((kenmerk) => {
-           return  <div key={kenmerk}>
-               
-               - {kenmerk}
-               </div>
-       })}
-        </div>
+  return (
+    <div>
+      {singlePort.kenmerken &&
+        singlePort.kenmerken.map((kenmerk) => {
+          return <div key={kenmerk}>- {kenmerk}</div>;
+        })}
+    </div>
+  );
 }
-export default Characteristics
+export default Characteristics;

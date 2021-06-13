@@ -35,41 +35,51 @@ function NavBar() {
         }}
       />
 
-      {checked && <div className={styles["nav-wrapper"]}>
-        
+      {checked && (
+        <div className={styles["nav-wrapper"]}>
           <Link to="/" className={styles["menuClass"]} onClick={handleClick}>
             Home
           </Link>
-          <Link to="/portfolioScreen" className={styles["menuClass"]} onClick={handleClick}>
+          <Link
+            to="/portfolioScreen"
+            className={styles["menuClass"]}
+            onClick={handleClick}
+          >
             Portfolio
           </Link>
-          <Link to="/about" className={styles["menuClass"]} onClick={handleClick}>
+          <Link
+            to="/about"
+            className={styles["menuClass"]}
+            onClick={handleClick}
+          >
             Over jodelajo
           </Link>
-          <Link to="/contact" className={styles["menuClass"]} onClick={handleClick}>
+          <Link
+            to="/contact"
+            className={styles["menuClass"]}
+            onClick={handleClick}
+          >
             Contact
           </Link>
-       
-        
-      </div>}
+        </div>
+      )}
 
-      {!checked && <div className={styles["nav-wrapper-web"]}>
-        
-        <Link to="/" className={styles["menuClass"]}>
-          Home
-        </Link>
-        <Link to="/portfolioScreen" className={styles["menuClass"]}>
-          Portfolio
-        </Link>
-        <Link to="/about" className={styles["menuClass"]}>
-          Over jodelajo
-        </Link>
-        <Link to="/contact" className={styles["menuClass"]}>
-          Contact
-        </Link>
-     
-      
-    </div>}
+      {!checked && (
+        <div className={styles["nav-wrapper-web"]}>
+          <Link to="/" className={styles["menuClass"]}>
+            Home
+          </Link>
+          <Link to="/portfolioScreen" className={styles["menuClass"]}>
+            Portfolio
+          </Link>
+          <Link to="/about" className={styles["menuClass"]}>
+            Over jodelajo
+          </Link>
+          <Link to="/contact" className={styles["menuClass"]}>
+            Contact
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

@@ -29,7 +29,6 @@ h3 {
 }
 .accent {
   color: var(--colors-background);
-  /* font-weight: 400; */
   text-decoration: none;
 }
 
