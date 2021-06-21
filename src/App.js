@@ -11,9 +11,6 @@ import Contact from "./pages/contact/Contact";
 import Footer from "./components/footer/Footer";
 import useGaTracker from "./components/useGaTracker";
 
-
-
-
 function App() {
   useGaTracker()
   const [theme, setTheme] = useState("dark");
