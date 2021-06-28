@@ -2,8 +2,8 @@
   {
     "id": "1",
     "title": "It bêste plakje fan Fryslân",
-    "website": "https://beste-plakje.netlify.app/",
-    "github": "https://github.com/jodelajo/react-my-app",
+    "website": "https://beste-plakje.nl/",
+    "github": "https://github.com/jodelajo/react-eindproject-frontend-development",
     "category": {
       "Wordpress": false,
       "Javascript": true,
