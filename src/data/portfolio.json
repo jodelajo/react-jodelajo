@@ -18,6 +18,23 @@
   },
   {
     "id": "2",
+    "title": "React Native Favorite Meal",
+    "website": null,
+    "github": "https://github.com/jodelajo/react-native-favorite-meal-app",
+    "category": {
+      "Wordpress": false,
+      "Javascript": true,
+      "React": false,
+      "Logo": false,
+      "Huisstijl": false,
+      "ReactNative": true
+    },
+    "image": "/portfolio/react_native_favorite_meal_app.png",
+    "description": "React Native app met diverse navigatie, redux, filter en favorieten",
+    "kenmerken": ["StackNavigation", "Redux", "filter-logic"]
+  },
+  {
+    "id": "3",
     "title": "Tent op Vlie",
     "website": "https://tentopvlie.nl/",
     "github": null,
@@ -34,7 +51,7 @@
     "kenmerken": ["Informatief", "Boekingssysteem", "SEO-optimalisatie"]
   },
   {
-    "id": "3",
+    "id": "4",
     "title": "De Haringvrouw",
     "website": "https://haringvrouw.nl/",
     "github": null,
@@ -51,7 +68,7 @@
     "kenmerken": ["Responsive", "Mobile-first", "Woo-Commerce"]
   },
   {
-    "id": "4",
+    "id": "5",
     "title": "Stichting DBF",
     "website": "https://stichtingdbf.nl/",
     "github": null,
@@ -66,24 +83,7 @@
     "image": "/portfolio/DBF.png",
     "description": "Van Stichting DBF kreeg ik de opdracht om een nieuwe website te maken die weinig onderhoud vergt voor hen. Zij wilden een website die vooral de functie van folder kreeg; Algemene informatie over de organisatie. Daarnaast moest het bijzondere vastgoed goed uitkomen op de website. De website biedt ook een actueel overzicht van beschikbare panden.",
     "kenmerken": ["Stijlvolle folder-website", "Actueel aanbod vastgoed"]
-  },
-  {
-    "id": "5",
-    "title": "Kock Volhoudbaar Advies",
-    "website": "https://kockvolhoudbaaradvies.nl/",
-    "github": null,
-    "category": {
-      "Wordpress": true,
-      "Javascript": false,
-      "React": false,
-      "Logo": true,
-      "Huisstijl": true,
-      "ReactNative": false
-    },
-    "image": "/portfolio/kva2014.png",
-    "description": "Voor het adviesbureau Kock Volhoudbaar advies mocht ik de gehele huisstijl inclusief website ontwerpen. Deze website is alweer van 2014 en momenteel bouw ik aan een nieuwe, modernere site.",
-    "kenmerken": ["Responsive"]
-  },
+  }, 
   {
     "id": "6",
     "title": "React Native game",
@@ -137,19 +137,19 @@
   },
   {
     "id": "9",
-    "title": "Glampingkast",
-    "website": null,
+    "title": "Kock Volhoudbaar Advies",
+    "website": "https://kockvolhoudbaaradvies.nl/",
     "github": null,
     "category": {
-      "Wordpress": false,
+      "Wordpress": true,
       "Javascript": false,
       "React": false,
-      "Logo": false,
-      "Huisstijl": false,
+      "Logo": true,
+      "Huisstijl": true,
       "ReactNative": false
     },
-    "image": "/portfolio/kasttent.png",
-    "description": "Opvouwbare kast ontworpen en gebouwd. Een kast met allure voor op de camping. Ongedierte-proof. Opzetten en afbreken zonder gereedschap.",
-    "kenmerken": ["Opvouwbaar", "Stevige kwaliteit", "Ongedierte-proof"]
+    "image": "/portfolio/kva2014.png",
+    "description": "Voor het adviesbureau Kock Volhoudbaar advies mocht ik de gehele huisstijl inclusief website ontwerpen. Deze website is alweer van 2014 en momenteel bouw ik aan een nieuwe, modernere site.",
+    "kenmerken": ["Responsive"]
   }
 ]
