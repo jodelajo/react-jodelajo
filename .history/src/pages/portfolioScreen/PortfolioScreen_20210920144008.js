@@ -7,15 +7,16 @@ function PortfolioScreen() {
   const [filteredPort, setFilteredPort] = useState(portfolioData);
   const [start, setStart] = useState(0);
   const [end, setEnd] = useState(9);
+  
 
-  function nextScreenHandler() {
-    setStart(start + 9);
-    setEnd(end + 9);
-  }
-  function prevScreenHandler() {
-    setStart(start - 9);
-    setEnd(end - 9);
-  }
+function nextScreenHandler() {
+  setStart(start + 9);
+  setEnd(end + 9);
+}
+function prevScreenHandler() {
+  setStart(start - 9);
+  setEnd(end - 9);
+}
 
   function handeClickAll() {
     setFilteredPort(portfolioData);
@@ -139,7 +140,7 @@ function PortfolioScreen() {
           value="php"
           onClick={handleClickPHP}
         >
-          PHP
+         PHP
         </button>
         <button
           type="button"
@@ -149,7 +150,7 @@ function PortfolioScreen() {
         >
           Logo
         </button>
-
+   
         <button
           type="button"
           className={styles["cat-button"]}
@@ -159,13 +160,18 @@ function PortfolioScreen() {
           Huisstijl
         </button>
       </div>
-
+      
       <div className={styles["port-wrapper"]}>
+
+
         {filteredPort.slice(start, end).map((singlePort) => (
-          <div className={styles["port-wrappertje"]} key={singlePort.id}>
+          <div className={styles["port-wrappertje"]}
+          key={singlePort.id}
+          >
             <Link
               to={`/singleportfolio/${singlePort.id}`}
               className={styles["port-comp"]}
+              
             >
               <div className={styles["image-box"]}>
                 <img
@@ -176,28 +182,30 @@ function PortfolioScreen() {
               </div>
 
               <p>{singlePort.title}</p>
+             
             </Link>
           </div>
         ))}
       </div>
       <div className={styles["web-buttons"]}>
-        <button
-          className={styles["arrow-button"]}
-          type="button"
-          disabled={start < 1}
-          onClick={prevScreenHandler}
-        >
-          ←
-        </button>
-        <button
-          className={styles["arrow-button"]}
-          type="button"
-          disabled={end >= filteredPort.length}
-          onClick={nextScreenHandler}
-        >
-          →
-        </button>
-      </div>
+          <button
+            className={styles["arrow-button"]}
+            type="button"
+            disabled={start < 1}
+            onClick={prevScreenHandler}
+          >
+            ←
+          </button>
+          <button
+            className={styles["arrow-button"]}
+            type="button"
+            disabled={end >= filteredPort.length}
+            onClick={nextScreenHandler}
+          >
+            →
+          </button>
+        </div>
+
     </div>
   );
 }

@@ -103,6 +103,10 @@
   .port-container h1 {
     font-size: 5rem;
   }
+  /* .port-wrappertje{
+    max-width: 360px;
+    height: 260px;
+  } */
   .cat-button {
     width: 260px;
   }
