@@ -69,10 +69,7 @@
   cursor: pointer;
   margin: 4px;
 }
-.web-buttons {
-  display: flex;
-  margin-top: 40px;
-}
+
 .arrow-button {
   font-size: 2rem;
   border: none;

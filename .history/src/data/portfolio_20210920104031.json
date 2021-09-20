@@ -168,56 +168,5 @@
     "image": "/portfolio/kva2014.png",
     "description": "Voor het adviesbureau Kock Volhoudbaar advies mocht ik de gehele huisstijl inclusief website ontwerpen. Deze website is alweer van 2014 en momenteel bouw ik aan een nieuwe, modernere site.",
     "kenmerken": ["Responsive"]
-  },
-  {
-    "id": "11",
-    "title": "Jodelajo 2020",
-    "website": "https://jodelajo.nl/jodelajo/",
-    "github": null,
-    "category": {
-      "Wordpress": true,
-      "Javascript": false,
-      "React": false,
-      "Logo": false,
-      "Huisstijl": false,
-      "ReactNative": false
-    },
-    "image": "/portfolio/jodelajo_2020.png",
-    "description": "Mijn laatste website in wordpress gemaakt. Voor het ontwerp van deze site heb ik veel gebruik gemaakt van Photoshop en Illustrator.",
-    "kenmerken": ["Responsive", "Photoshop", "Illustrator"]
-  },
-  {
-    "id": "12",
-    "title": "React Native Great Places",
-    "website": null,
-    "github": "https://github.com/jodelajo/react-native-great-places-app",
-    "category": {
-      "Wordpress": false,
-      "Javascript": true,
-      "React": false,
-      "Logo": false,
-      "Huisstijl": false,
-      "ReactNative": true
-    },
-    "image": "/portfolio/react_native_great_places.png",
-    "description": "React Native applicatie die gebruik maakt van native features, zoals de camera, googleMaps en locatie.",
-    "kenmerken": ["Native features", "camera, maps, location", "SQlite", "React Navigation 5+", "StackNavigation", "Redux"]
-  },
-  {
-    "id": "13",
-    "title": "Kock Volhoudbaar Advies",
-    "website": "https://kockvolhoudbaaradvies.nl/",
-    "github": null,
-    "category": {
-      "Wordpress": true,
-      "Javascript": false,
-      "React": false,
-      "Logo": true,
-      "Huisstijl": true,
-      "ReactNative": false
-    },
-    "image": "/portfolio/kva2014.png",
-    "description": "Voor het adviesbureau Kock Volhoudbaar advies mocht ik de gehele huisstijl inclusief website ontwerpen. Deze website is alweer van 2014 en momenteel bouw ik aan een nieuwe, modernere site.",
-    "kenmerken": ["Responsive"]
   }
 ]

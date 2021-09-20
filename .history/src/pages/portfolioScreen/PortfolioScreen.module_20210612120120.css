@@ -69,27 +69,7 @@
   cursor: pointer;
   margin: 4px;
 }
-.web-buttons {
-  display: flex;
-  margin-top: 40px;
-}
-.arrow-button {
-  font-size: 2rem;
-  border: none;
-  background-color: var(--colors-primary);
-  color: var(--colors-background);
-  cursor: pointer;
-  margin: 0;
-}
 
-.arrow-button:hover {
-  color: var(--colors-accent);
-}
-
-.arrow-button:disabled {
-  color: var(--colors-portfolio);
-  cursor: default;
-}
 @media only screen and (min-width: 768px) {
   .port-container h1 {
     font-size: 4rem;

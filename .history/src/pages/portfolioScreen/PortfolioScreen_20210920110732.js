@@ -5,18 +5,6 @@ import portfolioData from "../../data/portfolio.json";
 
 function PortfolioScreen() {
   const [filteredPort, setFilteredPort] = useState(portfolioData);
-  const [start, setStart] = useState(0);
-  const [end, setEnd] = useState(9);
-  
-
-function nextScreenHandler() {
-  setStart(start + 9);
-  setEnd(end + 9);
-}
-function prevScreenHandler() {
-  setStart(start - 9);
-  setEnd(end - 9);
-}
 
   function handeClickAll() {
     setFilteredPort(portfolioData);
@@ -146,7 +134,7 @@ function prevScreenHandler() {
       <div className={styles["port-wrapper"]}>
 
 
-        {filteredPort.slice(start, end).map((singlePort) => (
+        {filteredPort.slice(0,9).map((singlePort) => (
           <div className={styles["port-wrappertje"]}
           key={singlePort.id}
           >
@@ -169,25 +157,6 @@ function prevScreenHandler() {
           </div>
         ))}
       </div>
-      <div className={styles["web-buttons"]}>
-          <button
-            className={styles["arrow-button"]}
-            type="button"
-            disabled={start < 1}
-            onClick={prevScreenHandler}
-          >
-            ←
-          </button>
-          <button
-            className={styles["arrow-button"]}
-            type="button"
-            disabled={end >= filteredPort.length}
-            onClick={nextScreenHandler}
-          >
-            →
-          </button>
-        </div>
-
     </div>
   );
 }

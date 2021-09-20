@@ -7,7 +7,9 @@ function PortfolioScreen() {
   const [filteredPort, setFilteredPort] = useState(portfolioData);
   const [start, setStart] = useState(0);
   const [end, setEnd] = useState(9);
-  
+  const [currentScreen, setCurrentScreen] = useState(start, end)
+
+
 
 function nextScreenHandler() {
   setStart(start + 9);

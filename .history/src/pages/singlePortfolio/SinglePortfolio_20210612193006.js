@@ -16,8 +16,6 @@ function SinglePortfolio() {
   const nextPort = thisPort + 1;
   const prevPort = thisPort - 1;
 
-  console.log(thisPort);
-
   function cat() {
     setArrOfCats(Object.entries(singlePort.category));
   }

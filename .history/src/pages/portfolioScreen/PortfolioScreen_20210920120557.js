@@ -7,7 +7,11 @@ function PortfolioScreen() {
   const [filteredPort, setFilteredPort] = useState(portfolioData);
   const [start, setStart] = useState(0);
   const [end, setEnd] = useState(9);
-  
+  const [currentScreen, setCurrentScreen] = useState(start, end)
+ 
+console.log(filteredPort);
+console.log(currentScreen);
+
 
 function nextScreenHandler() {
   setStart(start + 9);
@@ -173,7 +177,7 @@ function prevScreenHandler() {
           <button
             className={styles["arrow-button"]}
             type="button"
-            disabled={start < 1}
+            // disabled={prevPort < 1}
             onClick={prevScreenHandler}
           >
             ←
@@ -181,7 +185,7 @@ function prevScreenHandler() {
           <button
             className={styles["arrow-button"]}
             type="button"
-            disabled={end >= filteredPort.length}
+            // disabled={thisPort >= PortfolioData.length}
             onClick={nextScreenHandler}
           >
             →

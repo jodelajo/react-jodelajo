@@ -5,17 +5,16 @@ import portfolioData from "../../data/portfolio.json";
 
 function PortfolioScreen() {
   const [filteredPort, setFilteredPort] = useState(portfolioData);
-  const [start, setStart] = useState(0);
-  const [end, setEnd] = useState(9);
-  
+  const start = 0;
+  const end = 9;
+  const [currentScreen, setCurrentScreen] = useState(start, end)
+  const [nextScreen, setNextScreen] = useState()
+console.log(filteredPort);
+console.log(currentScreen);
+
 
 function nextScreenHandler() {
-  setStart(start + 9);
-  setEnd(end + 9);
-}
-function prevScreenHandler() {
-  setStart(start - 9);
-  setEnd(end - 9);
+  setCurrentScreen({start: 9, end: 18})
 }
 
   function handeClickAll() {
@@ -173,15 +172,15 @@ function prevScreenHandler() {
           <button
             className={styles["arrow-button"]}
             type="button"
-            disabled={start < 1}
-            onClick={prevScreenHandler}
+            // disabled={prevPort < 1}
+            // onClick={prev}
           >
             ←
           </button>
           <button
             className={styles["arrow-button"]}
             type="button"
-            disabled={end >= filteredPort.length}
+            // disabled={thisPort >= PortfolioData.length}
             onClick={nextScreenHandler}
           >
             →
