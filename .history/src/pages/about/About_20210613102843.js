@@ -28,9 +28,10 @@ function About() {
           <span className={styles.accent}>Illustrator</span> en{" "}
           <span className={styles.accent}>InDesign</span> mijn{" "}
           <span className={styles.accent}>MBO-certificaten</span> behaald en
-          de bootcamp opleiding <span className={styles.accent}>Frontend Development</span>{" "}
+          momenteel wacht ik op de uitslag van mijn eindopdracht van de
+          opleiding <span className={styles.accent}>Frontend Development</span>{" "}
           aan de <span className={styles.accent}>Novi Hogeschool</span> in
-          Utrecht onlangs succesvol afgerond. Tijdens deze opleiding heb ik mij bekwaamd in de meeste
+          Utrecht. Tijdens deze opleiding heb ik mij bekwaamd in de meeste
           recente versies van <span className={styles.accent}>HTML/CSS</span>,{" "}
           <span className={styles.accent}>Javascript</span> en{" "}
           <span className={styles.accent}>React</span>.

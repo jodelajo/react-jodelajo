@@ -30,7 +30,7 @@ function About() {
           <span className={styles.accent}>MBO-certificaten</span> behaald en
           de bootcamp opleiding <span className={styles.accent}>Frontend Development</span>{" "}
           aan de <span className={styles.accent}>Novi Hogeschool</span> in
-          Utrecht onlangs succesvol afgerond. Tijdens deze opleiding heb ik mij bekwaamd in de meeste
+          Utrecht onlangs afgerond. Tijdens deze opleiding heb ik mij bekwaamd in de meeste
           recente versies van <span className={styles.accent}>HTML/CSS</span>,{" "}
           <span className={styles.accent}>Javascript</span> en{" "}
           <span className={styles.accent}>React</span>.
