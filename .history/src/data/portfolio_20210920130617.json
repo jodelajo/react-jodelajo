@@ -13,7 +13,7 @@
       "ReactNative": false
     },
     "image": "/portfolio/beste_plakje.png",
-    "description": "Deze webapplicatie was mijn eindopdracht voor de opleiding Frontend Developer.  De app is een weer-app, die op basis van een puntensysteem bepaalt op welke locatie momenteel het weer het beste is in Friesland. Vervolgens toont de app het dichtstbijzijnde terras.  Je kunt de app aanpassen door gebruik te maken van Boosters. Zo kun je extra punten geven voor 'temperatuur', 'zon' en/of 'windkracht'. De gebruiker kan direct inloggen om gebruik te kunnen maken van de app. Voor meer info, zie Github.",
+    "description": "Deze webapplicatie was mijn eindopdracht voor de opleiding Frontend Developer.  De app is een weer-app, die op basis van een puntensysteem bepaalt op welke locatie momenteel het weer het beste is in Friesland. Vervolgens toont de app het dichtstbijzijnde terras.  Je kunt de app aanpassen door gebruik te maken van Boosters. Zo kun je extra punten geven voor 'temperatuur', 'zon' en/of 'windkracht'. De gebruiker dient een account aan te maken en in te loggen om gebruik te kunnen maken van de app. Voor meer info, zie Github.",
     "kenmerken": null
   },
   {

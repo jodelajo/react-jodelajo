@@ -13,7 +13,7 @@
       "ReactNative": false
     },
     "image": "/portfolio/beste_plakje.png",
-    "description": "Deze webapplicatie was mijn eindopdracht voor de opleiding Frontend Developer.  De app is een weer-app, die op basis van een puntensysteem bepaalt op welke locatie momenteel het weer het beste is in Friesland. Vervolgens toont de app het dichtstbijzijnde terras.  Je kunt de app aanpassen door gebruik te maken van Boosters. Zo kun je extra punten geven voor 'temperatuur', 'zon' en/of 'windkracht'. De gebruiker kan direct inloggen om gebruik te kunnen maken van de app. Voor meer info, zie Github.",
+    "description": "Deze webapplicatie was mijn eindopdracht voor de opleiding Frontend Developer.  De app is een weer-app, die op basis van een puntensysteem bepaalt op welke locatie momenteel het weer het beste is in Friesland. Vervolgens toont de app het dichtstbijzijnde terras.  Je kunt de app aanpassen door gebruik te maken van Boosters. Zo kun je extra punten geven voor 'temperatuur', 'zon' en/of 'windkracht'. De gebruiker dient een account aan te maken en in te loggen om gebruik te kunnen maken van de app. Voor meer info, zie Github.",
     "kenmerken": null
   },
   {
@@ -64,8 +64,8 @@
       "ReactNative": true
     },
     "image": "/portfolio/react_native_coffeemachine.png",
-    "description": "In onze fictieve koffie bar hebben wij een koffiezetapparaat staan waarmee je via NFC kan verbinden en je via de app je koffie kan samenstellen. Omdat elke koffiebar andere koffie serveert heeft het backend team een REST API opgezet waarmee je van een apparaat de koffie opties op kunt halen. Je krijgt een lijst van beschikbare stijlen (types), maten en extra's. Per stijl wordt aangegeven welke opties beschikbaar zijn voor welke stijl koffie. Dit gebeurt aan de hand van een array van ids in het type object.",
-    "kenmerken": ["REST API", "react-navigation 6x", "axios"]
+    "description": "In onze fictieve koffie bar hebben wij een koffiezetapparaat staan waarmee je via NFC kan verbinden en je via de app je koffie kan samenstellen. Om te beginnen willen we de gebruiker uit een aantal soorten koffie laten kiezen. Hiervoor heeft onze ontwerper het “Style” scherm ontworpen waar je een lijst van verschillende koffie stijlen hebt. Omdat elke koffiebar andere koffie serveert heeft het backend team een REST API opgezet waarmee je van een apparaat de koffie opties op kunt halen. Je krijgt een lijst van beschikbare stijlen (types), maten en extra's. Per stijl wordt aangegeven welke opties beschikbaar zijn voor welke stijl koffie. Dit gebeurt aan de hand van een array van ids in het type object. Voor een proof of concept hebben we een testapparaat (Lex) met id: 60ba1ab72e35f2d9c786c610.",
+    "kenmerken": ["API", "react-navigation 6x", "axios"]
   },
   {
     "id": "5",
