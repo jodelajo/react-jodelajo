@@ -64,7 +64,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   font-weight: 200;
-  width: 130px;
+  width: 200px;
   padding: 6px 2px;
   cursor: pointer;
   margin: 4px;
@@ -103,16 +103,10 @@
   .port-container h1 {
     font-size: 5rem;
   }
-  .cat-button {
-    width: 260px;
-  }
 }
 @media only screen and (min-width: 1600px) {
   .port-container h1 {
     font-size: 6rem;
-  }
-  .port-buttons{
-    max-width: 60%;
   }
   .port-wrapper {
     max-width: 80%;

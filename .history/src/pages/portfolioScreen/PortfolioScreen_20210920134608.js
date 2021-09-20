@@ -137,20 +137,19 @@ function prevScreenHandler() {
         <button
           type="button"
           className={styles["cat-button"]}
-          value="php"
-          onClick={handleClickPHP}
+          value="logo"
+          onClick={handleClickLogo}
         >
-         PHP
+          PHP
         </button>
         <button
           type="button"
           className={styles["cat-button"]}
-          value="logo"
-          onClick={handleClickLogo}
+          value="php"
+          onClick={handleClickPHP}
         >
           Logo
         </button>
-   
         <button
           type="button"
           className={styles["cat-button"]}

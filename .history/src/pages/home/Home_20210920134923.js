@@ -38,12 +38,9 @@ function Home() {
             </Link>
             , maar ook{" "}
             <Link to="/portfolioScreen" className={styles["accent"]}>
-              Wordpress {" "}
+              Wordpress 
             </Link>
-             en momenteel bekwaam ik mij in  <Link to="/portfolioScreen" className={styles["accent"]}>
-              PHP 
-            </Link>. </p>
-             <p>Daarnaast ben ik MBO-gecertificeerd in
+             en ben PHP aan het leren. Daarnaast ben ik MBO-gecertificeerd in
             <Link to="/portfolioScreen" className={styles["accent"]}>
               {" "}
               Photoshop
@@ -56,8 +53,8 @@ function Home() {
             <Link to="/portfolioScreen" className={styles["accent"]}>
               InDesign
             </Link>
-            .</p>
-          
+            .
+          </p>
         </div>
       </div>
     </>

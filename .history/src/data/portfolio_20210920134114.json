@@ -86,7 +86,7 @@
       "PHP": true
     },
     "image": "/portfolio/php_cms.png",
-    "description": "Curcus PHP waarin je een dynamische CMS leert bouwen met MySQL en PHPMyAdmin.",
+    "description": "Curcus PHP waarin je een dynamische CMS leert bouwen met MySQL en PHPMyAdmin",
     "kenmerken": ["PHP", "MySql", "MyAdmin"]
   },
   {

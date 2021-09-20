@@ -111,11 +111,8 @@
   .port-container h1 {
     font-size: 6rem;
   }
-  .port-buttons{
-    max-width: 60%;
-  }
   .port-wrapper {
-    max-width: 80%;
+    max-width: 60%;
   }
   .port-img {
     width: 400px;

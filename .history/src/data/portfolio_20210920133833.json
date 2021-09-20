@@ -85,9 +85,9 @@
       "ReactNative": false,
       "PHP": true
     },
-    "image": "/portfolio/php_cms.png",
-    "description": "Curcus PHP waarin je een dynamische CMS leert bouwen met MySQL en PHPMyAdmin.",
-    "kenmerken": ["PHP", "MySql", "MyAdmin"]
+    "image": "/portfolio/haringvrouw.png",
+    "description": "De Haringvrouw is een webshop. De site is Mobile First ontworpen; dat betekent dat de basis van de site in eerste instantie gemaakt is voor mobile devices. Voor deze website waren belangrijk: shop Duidelijke en herkenbare look & feel. Zeer geschikt voor kleinere beeldschermen.",
+    "kenmerken": ["Responsive", "Mobile-first", "Woo-Commerce"]
   },
   {
     "id": "6",

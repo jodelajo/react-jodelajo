@@ -42,7 +42,7 @@ function Home() {
             </Link>
              en momenteel bekwaam ik mij in  <Link to="/portfolioScreen" className={styles["accent"]}>
               PHP 
-            </Link>. </p>
+            </Link>. 
              <p>Daarnaast ben ik MBO-gecertificeerd in
             <Link to="/portfolioScreen" className={styles["accent"]}>
               {" "}
@@ -57,7 +57,7 @@ function Home() {
               InDesign
             </Link>
             .</p>
-          
+          </p>
         </div>
       </div>
     </>
