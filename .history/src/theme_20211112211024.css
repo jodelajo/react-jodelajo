@@ -1,0 +1,28 @@
+.dark {
+  --colors-primary: #151617;
+  --colors-background: white;
+  --colors-accent: rgb(220, 20, 60);
+  --colors-portfolio: #222324;
+  --colors-content: rgb(124, 123, 123);
+  --colors-footer: #303031;
+  /* background-color: #151617; */
+  
+  background: url('../src/assets/images/bg_21.png') rgba(17, 17, 17, 0.99);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+.light {
+  --colors-primary: #fff;
+  --colors-background: #151617;
+  --colors-accent: rgb(220, 20, 60);
+  --colors-portfolio: rgb(206, 206, 206);
+  --colors-content: rgb(124, 123, 123);
+  --colors-footer: #303031;
+  background-color: #fff;
+  min-height: 100vh;
+}

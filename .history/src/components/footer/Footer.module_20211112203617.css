@@ -1,0 +1,58 @@
+.footer-container {
+  
+  position: relative;
+  background-color: var(--colors-primary);
+  width: 100%;
+  height: 43px;
+  position: fixed;
+  bottom: 0;
+  flex-shrink: 0;
+  display: flex;
+  z-index: 20;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.buttonContainer {
+  margin: 0;
+}
+
+.neon {
+ 
+height: 43px;
+transform: scale(0.1);
+z-index: 30;
+}
+
+.info-container {
+  height: 43px;
+  display: flex;
+  padding-right: 10px;
+  column-gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-text {
+  color: var(--colors-footer);
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.icons {
+  display: flex;
+  align-items: flex-end;
+}
+.contact-icons a {
+  font-size: 1.2rem;
+  color: var(--colors-footer);
+}
+
+.contact-icons a:hover {
+  color: var(--colors-background);
+}
+
+.mail {
+  font-size: 1.46rem;
+  margin-bottom: -3px;
+}

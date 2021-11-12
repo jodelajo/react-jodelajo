@@ -1,0 +1,48 @@
+:root {
+  --colors-primary: #151617;
+  --colors-background: white;
+  --colors-accent: rgb(220, 20, 60);
+  --colors-portfolio: #222324;
+  --colors-content: rgb(124, 123, 123);
+  --colors-footer: #303031;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  color: var(--colors-background);
+  padding-top: 100px;
+}
+
+@media only screen and (min-width: 576px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 10rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 12rem;
+  }
+}
