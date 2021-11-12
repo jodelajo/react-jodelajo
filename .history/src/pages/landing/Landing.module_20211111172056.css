@@ -1,0 +1,45 @@
+.landing {
+    position: relative;
+    right: 0%;
+    bottom: 0%;
+    width: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url(../../assets/images/bg_jodelajo2020_1.png) rgba(24, 22, 23, 0.7);
+    /* background-position: bottom right; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-blend-mode: multiply;
+   /* display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: space-between; */
+   
+  }
+  
+  
+  @media only screen and (min-width: 1200px) {
+    .neon {
+      padding-top: 100px;
+      margin-left: 600px;
+    }
+    .enterButton {
+      position: absolute;
+      right: 150px;
+      bottom: 90px;
+    }
+  }
+  
+  @media only screen and (min-width: 2000px) {
+    .neon {
+      padding-top: 500px;
+      margin-left: 1000px;
+    }
+    .enterButton {
+      position: absolute;
+      right: 600px;
+      bottom: 150px;
+    }
+  }
