@@ -1,0 +1,21 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  align-items: center;
+  
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+}

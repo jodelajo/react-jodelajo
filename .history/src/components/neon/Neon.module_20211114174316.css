@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/* body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Monoton', cursive;
+    font-size: 6rem;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 18px;
+    font-stretch: ultra-expanded;
+} */
+
+:root {
+    --colors-neon-letter: rgb(218, 17, 51);
+    --colors-neon-green: hsla(350, 100%, 59%, 0.7);
+    --colors-neon-accent: rgb(247, 140, 40);
+}
+
+.neonWrapper {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    font-family: 'Monoton', cursive;
+    font-size: 6rem;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 18px;
+    font-stretch: ultra-expanded;
+    /* width: 30rem;
+    height: 10rem; */
+    /* align-items: center;
+    justify-content: center; */
+    /* transform: translate(-50%, -50%); */
+    color: var(--colors-neon-letter);
+    text-shadow: 
+    0 0 7px var(--colors-neon-accent),
+    0 0 10px var(--colors-neon-accent),
+    0 0 21px var(--colors-neon-accent),
+    0 0 42px var(--colors-neon-green),
+    0 0 82px var(--colors-neon-green),
+    0 0 92px var(--colors-neon-green),
+    0 0 102px var(--colors-neon-green),
+    0 0 151px var(--colors-neon-green);
+    
+}
+
+.o {
+    animation: flicker 30s linear 12s infinite alternate;
+}
+
+
+.l {
+    animation: flicker 1.5s infinite alternate;
+}
+
+.j2 {
+    animation: flicker 5s infinite alternate;
+}
+
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 7px var(--colors-neon-accent),
+        0 0 10px var(--colors-neon-accent),
+        0 0 21px var(--colors-neon-accent),
+        0 0 42px var(--colors-neon-green),
+        0 0 82px var(--colors-neon-green),
+        0 0 92px var(--colors-neon-green),
+        0 0 102px var(--colors-neon-green),
+        0 0 151px var(--colors-neon-green);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .neonWrapper {
+       
+        font-size: 11rem;
+    }
+  }
+
+  @media only screen and (min-width: 2000px) {
+    .neonWrapper {
+        font-size: 16rem;
+    }
+}

@@ -1,0 +1,23 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  align-items: center;
+  
+}
+
+.show {
+  display: inline;
+  width: 100vw;
+  background-color: blue;
+}
+
+.hide {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+}
