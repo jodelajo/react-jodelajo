@@ -1,6 +1,24 @@
 [
   {
     "id": "1",
+    "title": "Pure CSSSSSSS",
+    "website": "https://jodelajo.nl/",
+    "github": "https://github.com/jodelajo/convert-wordpress-to-react-website",
+    "category": {
+      "Wordpress": false,
+      "Javascript": true,
+      "React": true,
+      "Logo": true,
+      "Huisstijl": true,
+      "ReactNative": false,
+      "PHP": false
+    },
+    "image": "/portfolio/landingpage3.png",
+    "description": "CSS oefening: Ik heb mijn oude landingpage in WordPress omgebouwd naar een React app en de neon-letters en de button opnieuw gemaakt, maar nu in CSS.",
+    "kenmerken": null
+  },
+  {
+    "id": "2",
     "title": "It bêste plakje fan Fryslân",
     "website": "https://beste-plakje.nl/",
     "github": "https://github.com/jodelajo/react-eindproject-frontend-development",
@@ -18,14 +36,14 @@
     "kenmerken": null
   },
   {
-    "id": "2",
+    "id": "3",
     "title": "React Native Favorite Meal",
     "website": null,
     "github": "https://github.com/jodelajo/react-native-favorite-meal-app",
     "category": {
       "Wordpress": false,
       "Javascript": true,
-      "React": false,
+      "React": true,
       "Logo": false,
       "Huisstijl": false,
       "ReactNative": true,
@@ -36,7 +54,7 @@
     "kenmerken": ["StackNavigation", "Redux", "filter-logic"]
   },
   {
-    "id": "3",
+    "id": "4",
     "title": "Tent op Vlie",
     "website": "https://tentopvlie.nl/",
     "github": null,
@@ -54,14 +72,14 @@
     "kenmerken": ["Informatief", "Boekingssysteem", "SEO-optimalisatie"]
   },
   {
-    "id": "4",
+    "id": "5",
     "title": "React Native CoffeeMachine",
     "website": null,
     "github": "https://github.com/jodelajo/rn-coffee-machine",
     "category": {
       "Wordpress": false,
       "Javascript": true,
-      "React": false,
+      "React": true,
       "Logo": false,
       "Huisstijl": false,
       "ReactNative": true,
@@ -72,7 +90,7 @@
     "kenmerken": ["REST API", "react-navigation 6x", "axios"]
   },
   {
-    "id": "5",
+    "id": "6",
     "title": "PHP dynamisch CMS",
     "website": null,
     "github": "https://github.com/jodelajo/php-cms",
@@ -90,7 +108,7 @@
     "kenmerken": ["PHP", "MySql", "MyAdmin"]
   },
   {
-    "id": "6",
+    "id": "7",
     "title": "Vrolijke Noodzaak",
     "website": "https://vrolijkenoodzaak.netlify.app/",
     "github": "https://github.com/jodelajo/jet-app",
@@ -108,7 +126,7 @@
     "kenmerken": ["React", "Sanity CMS"]
   },
   {
-    "id": "7",
+    "id": "8",
     "title": "Stichting DBF",
     "website": "https://stichtingdbf.nl/",
     "github": null,
@@ -126,14 +144,14 @@
     "kenmerken": ["Stijlvolle folder-website", "Actueel aanbod vastgoed"]
   },
   {
-    "id": "8",
+    "id": "9",
     "title": "React Native game",
     "website": "https://kockvolhoudbaaradvies.nl/",
     "github": "https://github.com/jodelajo/react-native-second-app",
     "category": {
       "Wordpress": false,
       "Javascript": true,
-      "React": false,
+      "React": true,
       "Logo": false,
       "Huisstijl": false,
       "ReactNative": true,
@@ -144,7 +162,7 @@
     "kenmerken": ["Geschikt voor Android en Apple", "Oefening met React Native"]
   },
   {
-    "id": "9",
+    "id": "10",
     "title": "Jodelajo 2020",
     "website": "https://jodelajo.nl/jodelajo/",
     "github": null,
@@ -152,8 +170,8 @@
       "Wordpress": true,
       "Javascript": false,
       "React": false,
-      "Logo": false,
-      "Huisstijl": false,
+      "Logo": true,
+      "Huisstijl": true,
       "ReactNative": false,
       "PHP": false
     },
@@ -162,14 +180,14 @@
     "kenmerken": ["Responsive", "Photoshop", "Illustrator"]
   },
   {
-    "id": "10",
+    "id": "11",
     "title": "React Native Great Places",
     "website": null,
     "github": "https://github.com/jodelajo/react-native-great-places-app",
     "category": {
       "Wordpress": false,
       "Javascript": true,
-      "React": false,
+      "React": true,
       "Logo": false,
       "Huisstijl": false,
       "ReactNative": true,
@@ -187,7 +205,7 @@
     ]
   },
   {
-    "id": "11",
+    "id": "12",
     "title": "MCM Taller de cosas",
     "website": "https://mcmtallerdecosas.es/",
     "github": null,
@@ -205,7 +223,7 @@
     "kenmerken": ["Responsive"]
   },
   {
-    "id": "12",
+    "id": "13",
     "title": "Kock Volhoudbaar Advies",
     "website": "https://kockvolhoudbaaradvies.nl/",
     "github": null,
@@ -223,7 +241,7 @@
     "kenmerken": ["Responsive"]
   },
   {
-    "id": "13",
+    "id": "14",
     "title": "De Haringvrouw",
     "website": "https://haringvrouw.nl/",
     "github": null,

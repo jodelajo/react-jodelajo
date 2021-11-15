@@ -41,7 +41,7 @@ function Home() {
               Wordpress {" "}
             </Link>
              en momenteel bekwaam ik mij in  <Link to="/portfolioScreen" className={styles["accent"]}>
-              PHP 
+              advanced CSS 
             </Link>. </p>
              <p>Daarnaast ben ik MBO-gecertificeerd in
             <Link to="/portfolioScreen" className={styles["accent"]}>
