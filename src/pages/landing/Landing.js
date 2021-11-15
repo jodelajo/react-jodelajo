@@ -4,6 +4,7 @@ import Neon from "../../components/neon/Neon";
 import LandingButton from "../../components/landingButton/LandingButton";
 
 export default function Landing() {
+
   return (
     <main className={styles.landing}>
       <div className={styles.landingWrapper}>

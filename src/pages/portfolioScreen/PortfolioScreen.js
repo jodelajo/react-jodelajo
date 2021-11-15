@@ -8,6 +8,8 @@ function PortfolioScreen() {
   const [start, setStart] = useState(0);
   const [end, setEnd] = useState(9);
 
+  
+
   function nextScreenHandler() {
     setStart(start + 9);
     setEnd(end + 9);

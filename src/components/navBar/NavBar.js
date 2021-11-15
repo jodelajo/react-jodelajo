@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import styles from "./NavBar.module.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo300x300.png";
+import UseMediaQuery from "../UseMediaQuery";
 
 function NavBar() {
   const [checked, setChecked] = useState(false);
+  const isActive = UseMediaQuery("(min-width: 992px)");
 
   function handleClick() {
     setChecked(!checked);
@@ -13,9 +15,14 @@ function NavBar() {
   return (
     <div className={styles["navbar-container"]}>
       <div className={styles["logo-name-wrapper"]}>
-        <Link to="/">
+        {isActive ? <Link to="/">
           <img src={logo} alt="logo" className={styles["logo"]} />
         </Link>
+      :
+      <Link to="/home">
+      <img src={logo} alt="logo" className={styles["logo"]} />
+    </Link>
+      }
         <h2>
           jodelajo<span className={styles["dot"]}>.</span>
         </h2>

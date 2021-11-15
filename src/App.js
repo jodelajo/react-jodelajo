@@ -3,15 +3,10 @@ import "./App.css";
 import "./theme.css";
 import { Route, Switch, useHistory } from "react-router-dom";
 import NavBar from "./components/navBar/NavBar";
-import Home from "./pages/home/Home";
-import PortfolioScreen from "./pages/portfolioScreen/PortfolioScreen";
-import SinglePortfolio from "./pages/singlePortfolio/SinglePortfolio";
-import About from "./pages/about/About";
-import Contact from "./pages/contact/Contact";
+import Landing from "../src/pages/landing/Landing";
 import Footer from "./components/footer/Footer";
 import UseMediaQuery from "./components/UseMediaQuery";
 import useGaTracker from "./components/useGaTracker";
-
 
 function App() {
   useGaTracker();
@@ -19,7 +14,16 @@ function App() {
   const isActive = UseMediaQuery("(min-width: 992px)");
   const history = useHistory();
   let slug = history.location.pathname;
-  const LandingLazy = lazy(() => import('../src/pages/landing/Landing'))
+  // const LandingLazy = lazy(() => import('../src/pages/landing/Landing'))
+  const HomeLazy = lazy(() => import("../src/pages/home/Home"));
+  const PortLazy = lazy(() =>
+    import("../src/pages/portfolioScreen/PortfolioScreen")
+  );
+  const SingPortLazy = lazy(() =>
+    import("../src/pages/singlePortfolio/SinglePortfolio")
+  );
+  const AboutLazy = lazy(() => import("../src/pages/about/About"));
+  const ContactLazy = lazy(() => import("../src/pages/contact/Contact"));
 
   function themeHandler() {
     if (theme === "light") {
@@ -29,27 +33,34 @@ function App() {
     }
   }
 
-
   return (
     <div className={`App ${theme}`}>
-      <div className="app-container">
-        {!isActive  || slug !== "/" ? <NavBar /> : null}
-        <Suspense fallback={<p>Loading...</p>}>
-        <Switch>
-          <Route exact path="/">
-            {isActive  ? <LandingLazy/> : <Home/> }
-          </Route>
-          <Route path="/home" component={Home} />
-          <Route path="/portfolioscreen" component={PortfolioScreen} />
-          <Route path="/singleportfolio/:slug" component={SinglePortfolio} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
-        </Suspense>
-        <span className="footer">
-          {!isActive || slug !=="/" ? <Footer themeHandler={themeHandler} />: null}
-        </span>
-      </div>
+      <Suspense fallback={<div className="fallback"></div>}>
+        <div className="app-container">
+          {!isActive || slug !== "/" ? <NavBar /> : null}
+
+          <Switch>
+            {isActive && isActive ? (
+              <Route exact path="/" component={Landing} />
+            ) : (
+              <Route exact path="/" component={HomeLazy} />
+            )}
+
+            {isActive && <Route exact path="/" component={Landing} />}
+            <Route path="/home" component={HomeLazy} />
+            <Route path="/portfolioscreen" component={PortLazy} />
+            <Route path="/singleportfolio/:slug" component={SingPortLazy} />
+            <Route path="/about" component={AboutLazy} />
+            <Route path="/contact" component={ContactLazy} />
+          </Switch>
+
+          <span className="footer">
+            {!isActive || slug !== "/" ? (
+              <Footer themeHandler={themeHandler} />
+            ) : null}
+          </span>
+        </div>
+      </Suspense>
     </div>
   );
 }

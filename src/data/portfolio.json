@@ -31,7 +31,7 @@
       "ReactNative": false,
       "PHP": false
     },
-    "image": "/portfolio/beste_plakje.png",
+    "image": "/portfolio/beste_plakje_sm.png",
     "description": "Deze webapplicatie was mijn eindopdracht voor de opleiding Frontend Developer.  De app is een weer-app, die op basis van een puntensysteem bepaalt op welke locatie momenteel het weer het beste is in Friesland. Vervolgens toont de app het dichtstbijzijnde terras.  Je kunt de app aanpassen door gebruik te maken van Boosters. Zo kun je extra punten geven voor 'temperatuur', 'zon' en/of 'windkracht'. De gebruiker kan direct inloggen om gebruik te kunnen maken van de app. Voor meer info, zie Github.",
     "kenmerken": null
   },
@@ -67,7 +67,7 @@
       "ReactNative": false,
       "PHP": false
     },
-    "image": "/portfolio/tentopvlie.png",
+    "image": "/portfolio/tentopvlie_sm.png",
     "description": "Deze website is gemaakt om een vakantielocatie te verhuren. In dit geval een tent op Vlieland. Belangrijke voorwaarden voor de site waren: verleidelijk/sfeer, informatief, boekingssysteem. De site staat hoog in de zoekmachines met de woorden “tent te huur Vlieland”.",
     "kenmerken": ["Informatief", "Boekingssysteem", "SEO-optimalisatie"]
   },
@@ -139,14 +139,14 @@
       "ReactNative": false,
       "PHP": false
     },
-    "image": "/portfolio/DBF.png",
+    "image": "/portfolio/DBF_sm.png",
     "description": "Van Stichting DBF kreeg ik de opdracht om een nieuwe website te maken die weinig onderhoud vergt voor hen. Zij wilden een website die vooral de functie van folder kreeg; Algemene informatie over de organisatie. Daarnaast moest het bijzondere vastgoed goed uitkomen op de website. De website biedt ook een actueel overzicht van beschikbare panden.",
     "kenmerken": ["Stijlvolle folder-website", "Actueel aanbod vastgoed"]
   },
   {
     "id": "9",
     "title": "React Native game",
-    "website": "https://kockvolhoudbaaradvies.nl/",
+    "website": null,
     "github": "https://github.com/jodelajo/react-native-second-app",
     "category": {
       "Wordpress": false,
@@ -175,7 +175,7 @@
       "ReactNative": false,
       "PHP": false
     },
-    "image": "/portfolio/jodelajo_2020.png",
+    "image": "/portfolio/jodelajo_2020_sm.png",
     "description": "Mijn laatste website in wordpress gemaakt. Voor het ontwerp van deze site heb ik veel gebruik gemaakt van Photoshop en Illustrator.",
     "kenmerken": ["Responsive", "Photoshop", "Illustrator"]
   },

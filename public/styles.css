@@ -1,0 +1,18 @@
+body::after {
+    content: 
+    url('./portfolio/bg_21_xsmall.png')
+    url('./portfolio/beste_plakje_sm.png') 
+    url('./portfolio/haringvrouw.png') 
+    url('./portfolio/jodelajo_2020_sm.png') 
+    url('./portfolio/mcm_tallerdecosas.png') 
+    url('./portfolio/tentopvlie_sm.png') 
+    url('./portfolio/vrolijke_noodzaak.png') 
+    url('./portfolio/DBF_sm.png') 
+    url('./portfolio/react_native_coffeemachine.png') 
+    url('./portfolio/react_native_favorite_meal_app.png') 
+    url('./portfolio/react_native_great_places.png') 
+    url('./portfolio/react_native_app.png') 
+    url('./portfolio/php_cms.png') 
+    url('./portfolio/screenshot_jodelajo.png');
+    display: none;
+}

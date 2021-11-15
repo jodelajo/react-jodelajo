@@ -14,10 +14,12 @@ Check website online [website](https://jodelajo.nl)
 ## Portfolio website
 - Responsive (mobile first)
 - Dark/Light mode
-- portfolio met categorieen en single page
-- simpel contactformulier
+- Landing Page created with pure css (and a background-image) (only visible in desktop-modus)
+- enhanced performance with lazyload and suspense and preloading images
+- portfolio with categories and a single page
+- simple contactform
 
-### Gebruikte dependencies
+### Used dependencies
 - React-Router-dom
 - React Icons
 - Emailjs-com
