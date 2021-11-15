@@ -34,8 +34,9 @@ function App() {
   }
 
   return (
+    <Suspense fallback={<div className="fallback"></div>}>
     <div className={`App ${theme}`}>
-      <Suspense fallback={<div className="fallback"></div>}>
+    
         <div className="app-container">
           {!isActive || slug !== "/" ? <NavBar /> : null}
 
@@ -60,8 +61,9 @@ function App() {
             ) : null}
           </span>
         </div>
-      </Suspense>
+     
     </div>
+    </Suspense>
   );
 }
 
