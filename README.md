@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Check website online [website](https://jodelajo.nl)
+Check website online [jodelajo.nl](https://jodelajo.nl)
 
 # React responsive website
 
