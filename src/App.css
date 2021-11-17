@@ -1,12 +1,14 @@
+
 .app-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100vw;
-  align-items: center;  
+  align-items: center;
 }
 
-.fallback {
+.fallbackLanding {
+  position: fixed;
   position: fixed;
   right: 0%;
   bottom: 0%;
@@ -14,14 +16,30 @@
   height: 100vh;
   min-width: 100vw;
   min-height: 100vh;
-  background: url(../src/assets/images/bg_21_xsmall.png) rgba(24, 22, 23, 0.7);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-blend-mode: multiply;
+  background:  #151617;
 }
+
 
 .footer {
   display: flex;
   width: 100%;
 }
+
+@media only screen and (min-width: 1200px) {
+
+  .fallbackLanding {
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+    width: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url(../src/assets/images/bg_21_xsmall.png) rgba(24, 22, 23, 0.7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-blend-mode: multiply;
+  }
+}
+

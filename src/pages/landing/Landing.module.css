@@ -6,7 +6,7 @@
   height: 100vh;
   min-width: 100vw;
   min-height: 100vh;
-  background: url(../../assets/images/bg_21_xsmall.png) rgba(24, 22, 23, 0.7);
+  background: url(../../assets/images/bg_21_small.png) rgba(24, 22, 23, 0.7);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -24,12 +24,20 @@
 .neon {
   padding-top: 16rem;
   transform: scale(1.7);
+  -webkit-transform: scale(1.7);
+  -moz-transform: scale(1.7);
+  -ms-transform: scale(1.7);
+  -o-transform: scale(1.7);
 }
 
 .landingButton {
   margin-bottom: 7rem;
   transform: scale(1.6);
   max-height: 15rem;
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  -o-transform: scale(1.6);
 }
 
 @media only screen and (min-width: 1200px) {
@@ -38,27 +46,43 @@
     padding-right: 3rem;
     align-self: flex-end;
     transform: scale(1);
-  }
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
 
   .landingButton {
     align-self: flex-end;
     margin-bottom: 2rem;
     padding-right: 10rem;
     transform: scale(0.9);
-  }
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
 }
 
 @media only screen and (min-width: 2000px) {
   .neon {
     padding-top: 18rem;
     padding-right: 12rem;
-    /* margin-left: 3rem; */
-    transform: scale(1.2);
-  }
+    /*margin-left: 3rem;
+    */transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
 
   .landingButton {
     margin-right: 24rem;
     margin-bottom: 6rem;
     transform: scale(1.4);
-  }
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
 }

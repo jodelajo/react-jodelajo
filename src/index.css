@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Monoton&display=swap");
 :root {
   --colors-primary: #151617;
   --colors-background: white;
@@ -15,6 +14,12 @@ body {
   box-sizing: border-box;
   font-size: 1.6rem;
   width: 100%;
+}
+
+body::after {
+  content: url(../src/assets/images/bg_21_small.png)
+    url(../src/assets/images/bg_21_xsmall.png);
+  display: none;
 }
 
 h1 {

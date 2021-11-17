@@ -41,7 +41,9 @@
 
 .port-img {
   width: 300px;
-  height: 130px;
+  /* height: 130px; */
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   transition: all 0.3s ease-in-out;
 }
 
@@ -119,6 +121,6 @@
   }
   .port-img {
     width: 400px;
-    height: 213px;
+    /* height: 213px; */
   }
 }

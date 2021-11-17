@@ -8,13 +8,28 @@ import Footer from "./components/footer/Footer";
 import UseMediaQuery from "./components/UseMediaQuery";
 import useGaTracker from "./components/useGaTracker";
 
+
 function App() {
   useGaTracker();
   const [theme, setTheme] = useState("dark");
+  // const [fallBack, setFallBack] = useState("fallbackLanding");
   const isActive = UseMediaQuery("(min-width: 992px)");
   const history = useHistory();
   let slug = history.location.pathname;
-  // const LandingLazy = lazy(() => import('../src/pages/landing/Landing'))
+ 
+
+// useEffect(() => {
+//   function fallbackHandler () {
+//     if (slug === "/" && isActive){
+//     setFallBack("fallbackLanding")
+//   } else {
+//     setFallBack("fallback")
+//   }
+//   }
+//   fallbackHandler()
+// },[slug, isActive])
+
+
   const HomeLazy = lazy(() => import("../src/pages/home/Home"));
   const PortLazy = lazy(() =>
     import("../src/pages/portfolioScreen/PortfolioScreen")
@@ -33,23 +48,24 @@ function App() {
     }
   }
 
+
   return (
-    <Suspense fallback={<div className="fallback"></div>}>
+    <Suspense fallback={<div className={"fallBack"}></div>}>
     <div className={`App ${theme}`}>
     
         <div className="app-container">
           {!isActive || slug !== "/" ? <NavBar /> : null}
 
           <Switch>
-            {isActive && isActive ? (
+            {isActive ? (
               <Route exact path="/" component={Landing} />
             ) : (
               <Route exact path="/" component={HomeLazy} />
             )}
 
             {isActive && <Route exact path="/" component={Landing} />}
-            <Route path="/home" component={HomeLazy} />
-            <Route path="/portfolioscreen" component={PortLazy} />
+            <Route exact path="/home" component={HomeLazy} />
+            <Route  path="/portfolioscreen" component={PortLazy} />
             <Route path="/singleportfolio/:slug" component={SingPortLazy} />
             <Route path="/about" component={AboutLazy} />
             <Route path="/contact" component={ContactLazy} />

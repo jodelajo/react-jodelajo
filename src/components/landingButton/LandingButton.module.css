@@ -23,21 +23,29 @@
   transform-style: preserve-3d;
   transform: rotateX(50deg);
   z-index: 1;
+  -webkit-transform: rotateX(50deg);
+  -moz-transform: rotateX(50deg);
+  -ms-transform: rotateX(50deg);
+  -o-transform: rotateX(50deg);
 }
 
 .hover {
     position: absolute;
     top: -2.7rem;
-  left: 1.46rem;
+    left: 1.46rem;
     width: 15rem;
     height: 13rem;
     border-radius: 50%;
-    /* background-color: blue; */
-    z-index: 6;
+    /*background-color: blue;
+    */z-index: 6;
     text-align: center;
     display: inline-block;
     transform-style: preserve-3d;
     transform: rotateX(50deg);
+    -webkit-transform: rotateX(50deg);
+    -moz-transform: rotateX(50deg);
+    -ms-transform: rotateX(50deg);
+    -o-transform: rotateX(50deg);
 }
 
 .hover:hover {
@@ -55,19 +63,22 @@
   border-radius: 50%;
   font-size: 1rem;
   color: #fff;
-
   z-index: 5;
   text-align: center;
   display: block;
   transform-style: preserve-3d;
   transform: rotateX(50deg);
+  -webkit-transform: rotateX(50deg);
+  -moz-transform: rotateX(50deg);
+  -ms-transform: rotateX(50deg);
+  -o-transform: rotateX(50deg);
 }
 
 
 
 .top {
-  /* position: absolute; */
-  padding-top: 0.8rem;
+  /*position: absolute;
+  */padding-top: 0.8rem;
   top: 0;
   left: 0;
   width: 8rem;
@@ -76,12 +87,15 @@
   border-radius: 50%;
   font-size: 1rem;
   color: #fff;
-
   z-index: 4;
   text-align: center;
   display: block;
   transform-style: preserve-3d;
   transform: rotateX(50deg);
+  -webkit-transform: rotateX(50deg);
+  -moz-transform: rotateX(50deg);
+  -ms-transform: rotateX(50deg);
+  -o-transform: rotateX(50deg);
 }
 
 
@@ -90,16 +104,19 @@
   position: absolute;
   top: -1rem;
   left: 3rem;
-  /* margin-top: -0.8rem; */
-  width: 12rem;
+  /*margin-top: -0.8rem;
+  */width: 12rem;
   height: 9rem;
   background: var(--colors-gradient);
   border-radius: 50%;
   z-index: 3;
   text-align: center;
-  
   transform-style: preserve-3d;
   transform: rotateX(50deg);
+  -webkit-transform: rotateX(50deg);
+  -moz-transform: rotateX(50deg);
+  -ms-transform: rotateX(50deg);
+  -o-transform: rotateX(50deg);
 }
 
 
@@ -107,17 +124,19 @@
   position: absolute;
   top: -2.7rem;
   left: 1.46rem;
-  /* margin-top: -3.5rem; */
-  width: 15rem;
+  /*margin-top: -3.5rem;
+  */width: 15rem;
   height: 13rem;
   background-color: #000;
   border-radius: 50%;
-
   z-index: 2;
   text-align: center;
-  
   transform-style: preserve-3d;
   transform: rotateX(50deg);
+  -webkit-transform: rotateX(50deg);
+  -moz-transform: rotateX(50deg);
+  -ms-transform: rotateX(50deg);
+  -o-transform: rotateX(50deg);
 }
 
 
@@ -127,6 +146,10 @@
   font-family: "Courier New", Courier, monospace;
   font-weight: 500;
   transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 a {
   text-decoration: none;
@@ -137,6 +160,10 @@ a {
   padding: 0;
   margin-left: -60px;
   transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
 }
 
 .buttonAround {
@@ -184,4 +211,8 @@ a {
   transform-style: preserve-3d;
   transform: rotateX(70deg) skewY(4deg);
   box-shadow: 5px 10px 40px 30px rgba(12, 10, 10, 0.9);
+  -webkit-transform: rotateX(70deg) skewY(4deg);
+  -moz-transform: rotateX(70deg) skewY(4deg);
+  -ms-transform: rotateX(70deg) skewY(4deg);
+  -o-transform: rotateX(70deg) skewY(4deg);
 }
