@@ -9,13 +9,22 @@ import { CgWebsite } from "react-icons/cg";
 function SinglePortfolio() {
   const [arrOfCats, setArrOfCats] = useState([]);
   const history = useHistory();
-  const { slug } = useParams();
+  const { slugs } = useParams();
+  
 
-  const singlePort = PortfolioData[slug - 1];
-  const thisPort = parseInt(singlePort.id, 10);
-  const nextPort = thisPort + 1;
-  const prevPort = thisPort - 1;
+  const singlePort = PortfolioData && PortfolioData.find((port)=> {
+    return port.slug === slugs
+  });
+  const nextId = parseInt(singlePort && singlePort.id) + 1
+  const nextPort = PortfolioData.find((port) => {
+    return parseInt(port.id) === nextId
+  })
+  const prevId = parseInt(singlePort.id) - 1
+  const prevPort = PortfolioData.find((port) => {
+    return (parseInt(port.id) === prevId)
+  })
 
+  const thisPort = singlePort.slugs;
 
   function cat() {
     setArrOfCats(Object.entries(singlePort.category));
@@ -38,11 +47,11 @@ function SinglePortfolio() {
   });
 
   function prev() {
-    history.push(`/singleportfolio/${prevPort}`);
+    history.push(`/singleportfolio/${prevPort.slug}`);
   }
 
   function next() {
-    history.push(`/singleportfolio/${nextPort}`);
+    history.push(`/singleportfolio/${nextPort.slug}`);
   }
 
   return (

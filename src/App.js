@@ -66,7 +66,7 @@ function App() {
             {isActive && <Route exact path="/" component={Landing} />}
             <Route exact path="/home" component={HomeLazy} />
             <Route  path="/portfolioscreen" component={PortLazy} />
-            <Route path="/singleportfolio/:slug" component={SingPortLazy} />
+            <Route path="/singleportfolio/:slugs" component={SingPortLazy} />
             <Route path="/about" component={AboutLazy} />
             <Route path="/contact" component={ContactLazy} />
           </Switch>

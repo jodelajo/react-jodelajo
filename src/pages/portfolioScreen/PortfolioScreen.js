@@ -8,8 +8,6 @@ function PortfolioScreen() {
   const [start, setStart] = useState(0);
   const [end, setEnd] = useState(9);
 
-  
-
   function nextScreenHandler() {
     setStart(start + 9);
     setEnd(end + 9);
@@ -91,6 +89,7 @@ function PortfolioScreen() {
     }
   }
 
+
   return (
     <div className={styles["port-container"]}>
       <h1>Portfolio</h1>
@@ -166,7 +165,7 @@ function PortfolioScreen() {
         {filteredPort.slice(start, end).map((singlePort) => (
           <div className={styles["port-wrappertje"]} key={singlePort.id}>
             <Link
-              to={`/singleportfolio/${singlePort.id}`}
+              to={`/singleportfolio/${singlePort.slug}`}
               className={styles["port-comp"]}
             >
               <div className={styles["image-box"]}>
@@ -182,6 +181,8 @@ function PortfolioScreen() {
           </div>
         ))}
       </div>
+
+      
       <div className={styles["web-buttons"]}>
         <button
           className={styles["arrow-button"]}
