@@ -16,15 +16,14 @@ function SinglePortfolio() {
     return port.slug === slugs
   });
   const nextId = parseInt(singlePort && singlePort.id) + 1
-  const nextPort = PortfolioData.find((port) => {
+  const nextPort = PortfolioData && PortfolioData.find((port) => {
     return parseInt(port.id) === nextId
   })
-  const prevId = parseInt(singlePort.id) - 1
-  const prevPort = PortfolioData.find((port) => {
+  const prevId = parseInt(singlePort && singlePort.id) - 1
+  const prevPort = PortfolioData && PortfolioData.find((port) => {
     return (parseInt(port.id) === prevId)
   })
 
-  const thisPort = singlePort.slugs;
 
   function cat() {
     setArrOfCats(Object.entries(singlePort.category));
@@ -63,7 +62,7 @@ function SinglePortfolio() {
         <button
           className={styles["arrow-button"]}
           type="button"
-          disabled={prevPort < 1}
+          disabled={prevPort === undefined}
           onClick={prev}
         >
           ←
@@ -71,7 +70,7 @@ function SinglePortfolio() {
         <button
           className={styles["arrow-button"]}
           type="button"
-          disabled={thisPort >= PortfolioData.length}
+          disabled={nextPort === undefined}
           onClick={next}
         >
           →
@@ -82,7 +81,7 @@ function SinglePortfolio() {
           <button
             className={styles["arrow-button"]}
             type="button"
-            disabled={prevPort < 1}
+            disabled={prevPort === undefined}
             onClick={prev}
           >
             ←
@@ -127,7 +126,7 @@ function SinglePortfolio() {
           <button
             className={styles["arrow-button"]}
             type="button"
-            disabled={thisPort >= PortfolioData.length}
+            disabled={nextPort === undefined}
             onClick={next}
           >
             →
