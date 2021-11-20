@@ -10,11 +10,11 @@ import { CgWebsite } from "react-icons/cg";
 function SinglePortfolio() {
   const [arrOfCats, setArrOfCats] = useState([]);
   const history = useHistory();
-  const { slugs } = useParams();
+  const { slug } = useParams();
   
   // const singlePortSlug = PortfolioData && (stringToSlug(PortfolioData[0].title));
   const singlePort = PortfolioData && PortfolioData.find((port)=> {
-    return stringToSlug(port.title) === slugs
+    return stringToSlug(port.title) === slug
   });
 
   
