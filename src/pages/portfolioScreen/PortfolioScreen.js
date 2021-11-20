@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./PortfolioScreen.module.css";
+import stringToSlug from "../../helpers/stringToSlug";
 import portfolioData from "../../data/portfolio.json";
 
 function PortfolioScreen() {
@@ -165,7 +166,7 @@ function PortfolioScreen() {
         {filteredPort.slice(start, end).map((singlePort) => (
           <div className={styles["port-wrappertje"]} key={singlePort.id}>
             <Link
-              to={`/singleportfolio/${singlePort.slug}`}
+              to={`/singleportfolio/${stringToSlug(singlePort.title)}`}
               className={styles["port-comp"]}
             >
               <div className={styles["image-box"]}>

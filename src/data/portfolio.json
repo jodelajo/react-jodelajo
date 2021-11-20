@@ -2,7 +2,6 @@
   {
     "id": "1",
     "title": "Pure CSSSSSSS",
-    "slug": "pure-csssssss",
     "website": "https://jodelajo.nl/",
     "github": "https://github.com/jodelajo/convert-wordpress-to-react-website",
     "category": {
@@ -21,7 +20,6 @@
   {
     "id": "2",
     "title": "It bêste plakje fan Fryslân",
-    "slug": "it-beste-plakje-fan-fryslan",
     "website": "https://beste-plakje.nl/",
     "github": "https://github.com/jodelajo/react-eindproject-frontend-development",
     "category": {
@@ -40,7 +38,6 @@
   {
     "id": "3",
     "title": "React Native Favorite Meal",
-    "slug": "react-native-favorite-meal",
     "website": null,
     "github": "https://github.com/jodelajo/react-native-favorite-meal-app",
     "category": {
@@ -59,7 +56,6 @@
   {
     "id": "4",
     "title": "Tent op Vlie",
-    "slug": "tent-op-vlie",
     "website": "https://tentopvlie.nl/",
     "github": null,
     "category": {
@@ -78,7 +74,6 @@
   {
     "id": "5",
     "title": "React Native CoffeeMachine",
-    "slug": "react-native-coffeemachine",
     "website": null,
     "github": "https://github.com/jodelajo/rn-coffee-machine",
     "category": {
@@ -97,7 +92,6 @@
   {
     "id": "6",
     "title": "PHP dynamisch CMS",
-    "slug": "php-dynamisch-cms",
     "website": null,
     "github": "https://github.com/jodelajo/php-cms",
     "category": {
@@ -116,7 +110,6 @@
   {
     "id": "7",
     "title": "Vrolijke Noodzaak",
-    "slug": "vrolijke-noodzaak",
     "website": "https://vrolijkenoodzaak.netlify.app/",
     "github": "https://github.com/jodelajo/jet-app",
     "category": {
@@ -135,7 +128,6 @@
   {
     "id": "8",
     "title": "Stichting DBF",
-    "slug": "stichting-dbf",
     "website": "https://stichtingdbf.nl/",
     "github": null,
     "category": {
@@ -154,7 +146,6 @@
   {
     "id": "9",
     "title": "React Native game",
-    "slug": "react-native-game",
     "website": null,
     "github": "https://github.com/jodelajo/react-native-second-app",
     "category": {
@@ -173,7 +164,6 @@
   {
     "id": "10",
     "title": "Jodelajo 2020",
-    "slug": "jodelajo-2020",
     "website": "https://jodelajo.nl/jodelajo/",
     "github": null,
     "category": {
@@ -192,7 +182,6 @@
   {
     "id": "11",
     "title": "React Native Great Places",
-    "slug": "react-native-great-places",
     "website": null,
     "github": "https://github.com/jodelajo/react-native-great-places-app",
     "category": {
@@ -218,7 +207,6 @@
   {
     "id": "12",
     "title": "MCM Taller de cosas",
-    "slug": "mcm-taller-de-cosas",
     "website": "https://mcmtallerdecosas.es/",
     "github": null,
     "category": {
@@ -237,7 +225,6 @@
   {
     "id": "13",
     "title": "Kock Volhoudbaar Advies",
-    "slug": "kock-volhoudbaar-advies",
     "website": "https://kockvolhoudbaaradvies.nl/",
     "github": null,
     "category": {
@@ -256,7 +243,6 @@
   {
     "id": "14",
     "title": "De Haringvrouw",
-    "slug": "de-haringvrouw",
     "website": "https://haringvrouw.nl/",
     "github": null,
     "category": {

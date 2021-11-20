@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./SinglePortfolio.module.css";
+import stringToSlug from "../../helpers/stringToSlug";
 import PortfolioData from "../../data/portfolio.json";
 import { useParams, useHistory } from "react-router-dom";
 import Characteristics from "../../components/characteristics/Characteristics";
@@ -11,10 +12,12 @@ function SinglePortfolio() {
   const history = useHistory();
   const { slugs } = useParams();
   
-
+  // const singlePortSlug = PortfolioData && (stringToSlug(PortfolioData[0].title));
   const singlePort = PortfolioData && PortfolioData.find((port)=> {
-    return port.slug === slugs
+    return stringToSlug(port.title) === slugs
   });
+
+  
   const nextId = parseInt(singlePort && singlePort.id) + 1
   const nextPort = PortfolioData && PortfolioData.find((port) => {
     return parseInt(port.id) === nextId
@@ -46,17 +49,17 @@ function SinglePortfolio() {
   });
 
   function prev() {
-    history.push(`/singleportfolio/${prevPort.slug}`);
+    history.push(`/singleportfolio/${stringToSlug(prevPort.title)}`);
   }
 
   function next() {
-    history.push(`/singleportfolio/${nextPort.slug}`);
+    history.push(`/singleportfolio/${stringToSlug(nextPort.title)}`);
   }
 
   return (
     <div className={styles["singlePort-container"]}>
       <div className={styles["title-web"]}>
-        <h1>{singlePort.title}</h1>
+        <h1>{singlePort && singlePort.title}</h1>
       </div>
       <div className={styles["mobile-buttons"]}>
         <button
