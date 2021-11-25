@@ -1,29 +1,34 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import styles from "./SinglePortfolio.module.css";
 import stringToSlug from "../../helpers/stringToSlug";
-import PortfolioData from "../../data/portfolio.json";
+import { PortfolioContext } from '../../context/PortfolioContext'
 import { useParams, useHistory } from "react-router-dom";
 import Characteristics from "../../components/characteristics/Characteristics";
 import { IoLogoGithub } from "react-icons/io5";
 import { CgWebsite } from "react-icons/cg";
 
+
 function SinglePortfolio() {
+  const { portData } = useContext(PortfolioContext)
   const [arrOfCats, setArrOfCats] = useState([]);
   const history = useHistory();
   const { slug } = useParams();
+ 
+  console.log(portData);
+
   
   // const singlePortSlug = PortfolioData && (stringToSlug(PortfolioData[0].title));
-  const singlePort = PortfolioData && PortfolioData.find((port)=> {
+  const singlePort = portData && portData.find((port)=> {
     return stringToSlug(port.title) === slug
   });
 
-  
+  console.log(singlePort);
   const nextId = parseInt(singlePort && singlePort.id) + 1
-  const nextPort = PortfolioData && PortfolioData.find((port) => {
+  const nextPort = portData && portData.find((port) => {
     return parseInt(port.id) === nextId
   })
   const prevId = parseInt(singlePort && singlePort.id) - 1
-  const prevPort = PortfolioData && PortfolioData.find((port) => {
+  const prevPort = portData && portData.find((port) => {
     return (parseInt(port.id) === prevId)
   })
 
@@ -92,11 +97,12 @@ function SinglePortfolio() {
         </div>
         <div className={styles["port-wrapper"]}>
           <div className={styles["port"]}>
-            <img
+           {singlePort.image ? <img
               src={singlePort.image}
               alt={singlePort.title}
               className={styles["single-img"]}
-            />
+            /> :
+            <div className={styles["single-img"]}><singlePort.code /></div>}
             <div className={styles["right"]}>
               <div className={styles["title-mob"]}>
                 <h1>{singlePort.title}</h1>

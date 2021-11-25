@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./PortfolioScreen.module.css";
 import stringToSlug from "../../helpers/stringToSlug";
-import portfolioData from "../../data/portfolio.json";
+import { PortfolioContext } from '../../context/PortfolioContext'
 
 function PortfolioScreen() {
-  const [filteredPort, setFilteredPort] = useState(portfolioData);
+  const { portData } = useContext(PortfolioContext)
+  const [filteredPort, setFilteredPort] = useState();
   const [start, setStart] = useState(0);
   const [end, setEnd] = useState(9);
+
+ 
+useEffect(()=>{
+  setFilteredPort(portData)
+// eslint-disable-next-line react-hooks/exhaustive-deps
+},[])
 
   function nextScreenHandler() {
     setStart(start + 9);
@@ -19,34 +26,34 @@ function PortfolioScreen() {
   }
 
   function handeClickAll() {
-    setFilteredPort(portfolioData);
+    setFilteredPort(portData);
   }
 
-  const portWordpress = portfolioData.filter((port) => {
-    return port.category.Wordpress;
+  const portWordpress = portData.filter((port) => {
+    return port.category.wordpress;
   });
 
-  const portJavascript = portfolioData.filter((port) => {
-    return port.category.Javascript;
+  // const portJavascript = portData.filter((port) => {
+  //   return port.category.javascript;
+  // });
+
+  const portReact = portData.filter((port) => {
+    return port.category.react;
   });
 
-  const portReact = portfolioData.filter((port) => {
-    return port.category.React;
-  });
+  // const portReactNative = portData.filter((port) => {
+  //   return port.category.reactNative;
+  // });
 
-  const portReactNative = portfolioData.filter((port) => {
-    return port.category.ReactNative;
-  });
-
-  const portPHP = portfolioData.filter((port) => {
+  const portPHP = portData.filter((port) => {
     return port.category.PHP;
   });
-  const portLogo = portfolioData.filter((port) => {
-    return port.category.Logo;
+  const portLogo = portData.filter((port) => {
+    return port.category.logo;
   });
 
-  const portHuisstijl = portfolioData.filter((port) => {
-    return port.category.Huisstijl;
+  const portCss = portData.filter((port) => {
+    return port.category.css;
   });
 
   function handleClickWordpress() {
@@ -61,17 +68,17 @@ function PortfolioScreen() {
     }
   }
 
-  function handleClickJavascript() {
-    if (portJavascript) {
-      setFilteredPort(portJavascript);
-    }
-  }
+  // function handleClickJavascript() {
+  //   if (portJavascript) {
+  //     setFilteredPort(portJavascript);
+  //   }
+  // }
 
-  function handleClickReactNative() {
-    if (portReactNative) {
-      setFilteredPort(portReactNative);
-    }
-  }
+  // function handleClickReactNative() {
+  //   if (portReactNative) {
+  //     setFilteredPort(portReactNative);
+  //   }
+  // }
 
   function handleClickLogo() {
     if (portLogo) {
@@ -84,12 +91,14 @@ function PortfolioScreen() {
     }
   }
 
-  function handleClickHuisstijl() {
-    if (portHuisstijl) {
-      setFilteredPort(portHuisstijl);
+  function handleClickCss() {
+    if (portCss) {
+      setFilteredPort(portCss);
     }
   }
 
+  // console.log(filteredPort.length);
+  console.log(end);
 
   return (
     <div className={styles["port-container"]}>
@@ -119,7 +128,7 @@ function PortfolioScreen() {
         >
           React
         </button>
-        <button
+        {/* <button
           type="button"
           className={styles["cat-button"]}
           value="javascript"
@@ -134,7 +143,7 @@ function PortfolioScreen() {
           onClick={handleClickReactNative}
         >
           ReactNative
-        </button>
+        </button> */}
         <button
           type="button"
           className={styles["cat-button"]}
@@ -155,26 +164,27 @@ function PortfolioScreen() {
         <button
           type="button"
           className={styles["cat-button"]}
-          value="huisstijl"
-          onClick={handleClickHuisstijl}
+          value="css"
+          onClick={handleClickCss}
         >
-          Huisstijl
+          CSS
         </button>
       </div>
 
       <div className={styles["port-wrapper"]}>
-        {filteredPort.slice(start, end).map((singlePort) => (
-          <div className={styles["port-wrappertje"]} key={singlePort.id}>
+        {filteredPort && filteredPort.slice(start, end).map((singlePort) => (
+          <div className={styles["port-comp"]} key={singlePort.id}>
             <Link
               to={`/singleportfolio/${stringToSlug(singlePort.title)}`}
-              className={styles["port-comp"]}
+              
             >
               <div className={styles["image-box"]}>
-                <img
+               {singlePort.image ? <img
                   src={singlePort.image}
                   alt="portfolio"
                   className={styles["port-img"]}
-                />
+                /> :
+                <div className={styles.flame}><singlePort.code  /></div>}
               </div>
 
               <p>{singlePort.title}</p>
@@ -196,7 +206,7 @@ function PortfolioScreen() {
         <button
           className={styles["arrow-button"]}
           type="button"
-          disabled={end >= filteredPort.length}
+          disabled={filteredPort && filteredPort.length <= end}
           onClick={nextScreenHandler}
         >
           →

@@ -1,0 +1,18 @@
+:root {
+    --colors-yellow: gold;
+    --colors-orange: orange;
+    --colors-red: orangered;
+    --colors-textRed: crimson;
+}
+
+.messageContainer {
+    padding-top: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    line-height: 0.3rem;
+}

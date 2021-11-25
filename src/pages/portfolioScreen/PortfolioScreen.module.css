@@ -1,5 +1,6 @@
 .port-container {
-  width: 80%;
+  width: 100%;
+  max-width: 100vw;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -16,7 +17,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  color: var(--colors-background);
+  
   font-size: 1.4rem;
   font-weight: 200;
   flex-wrap: wrap;
@@ -28,23 +29,43 @@
   text-align: center;
   background-color: var(--colors-portfolio);
   border-radius: 4px;
-  padding: 30px 30px 0 30px;
+  padding: 30px 10px 0 10px;
+  width:90vw;
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  
+}
+.port-comp a {
   color: var(--colors-background);
 }
 
 .image-box {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 16 / 9;
 }
 
 .port-img {
-  width: 300px;
-  /* height: 130px; */
+  width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
+}
+
+.flame {
+  height: 260px;
+  margin-top: -80px;
+  /* aspect-ratio: 16 / 9;
+  object-fit: cover; */
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
 }
 
 .port-img:hover {
@@ -57,6 +78,7 @@
   column-gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .cat-button {
@@ -66,6 +88,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   font-weight: 200;
+  flex: 0 0 33%; 
   width: 130px;
   padding: 6px 2px;
   cursor: pointer;
@@ -99,14 +122,24 @@
   .port-buttons {
     margin-bottom: 100px;
   }
+
+  .flame {
+    margin-top: -100px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   .port-container h1 {
     font-size: 5rem;
   }
+  .port-comp {
+    width: 400px;
+    height: 300px;
+    padding: 30px 20px 0 20px;
+  }
   .cat-button {
     width: 260px;
+    flex: 0 0 25%; 
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -119,8 +152,20 @@
   .port-wrapper {
     max-width: 80%;
   }
+  .port-comp {
+    width: 500px;
+    height: 350px;
+  }
   .port-img {
     width: 400px;
     /* height: 213px; */
   }
+
+  .flame {
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+}
 }
