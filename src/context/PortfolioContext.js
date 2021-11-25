@@ -12,7 +12,7 @@ useEffect(()=>{
     setData(contextData)
 // eslint-disable-next-line react-hooks/exhaustive-deps
 },[])
-console.log(portData);
+
 
 const data = {
     portData

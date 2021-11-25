@@ -97,8 +97,6 @@ useEffect(()=>{
     }
   }
 
-  // console.log(filteredPort.length);
-  console.log(end);
 
   return (
     <div className={styles["port-container"]}>

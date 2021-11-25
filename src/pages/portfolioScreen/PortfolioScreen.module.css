@@ -31,6 +31,7 @@
   border-radius: 4px;
   padding: 30px 10px 0 10px;
   width:90vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -54,11 +55,15 @@
   aspect-ratio: 16 / 9;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 .flame {
   height: 260px;
-  margin-top: -80px;
+  margin-top: -120px;
   /* aspect-ratio: 16 / 9;
   object-fit: cover; */
   transform: scale(0.5);
@@ -122,10 +127,6 @@
   .port-buttons {
     margin-bottom: 100px;
   }
-
-  .flame {
-    margin-top: -100px;
-  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -134,13 +135,15 @@
   }
   .port-comp {
     width: 400px;
-    height: 300px;
     padding: 30px 20px 0 20px;
   }
   .cat-button {
     width: 260px;
     flex: 0 0 25%; 
   }
+  /* .flame {
+    margin-top: -120px;
+  } */
 }
 @media only screen and (min-width: 1600px) {
   .port-container h1 {
@@ -154,7 +157,7 @@
   }
   .port-comp {
     width: 500px;
-    height: 350px;
+    /* height: 350px; */
   }
   .port-img {
     width: 400px;

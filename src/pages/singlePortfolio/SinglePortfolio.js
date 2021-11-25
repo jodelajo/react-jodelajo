@@ -13,16 +13,11 @@ function SinglePortfolio() {
   const [arrOfCats, setArrOfCats] = useState([]);
   const history = useHistory();
   const { slug } = useParams();
- 
-  console.log(portData);
-
-  
-  // const singlePortSlug = PortfolioData && (stringToSlug(PortfolioData[0].title));
+   
   const singlePort = portData && portData.find((port)=> {
     return stringToSlug(port.title) === slug
   });
 
-  console.log(singlePort);
   const nextId = parseInt(singlePort && singlePort.id) + 1
   const nextPort = portData && portData.find((port) => {
     return parseInt(port.id) === nextId

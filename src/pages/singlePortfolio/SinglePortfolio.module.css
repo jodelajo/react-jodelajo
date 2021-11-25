@@ -176,7 +176,7 @@
     padding: 30px;
     margin: 20px;
     min-height: 600px;
-    min-width: 80vw;
+    width: 80vw;
   }
 
   .list {
