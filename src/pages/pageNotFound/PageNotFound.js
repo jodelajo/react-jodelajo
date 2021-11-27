@@ -10,6 +10,7 @@ export default function PageNotFound() {
         <div className={styles.notFound}>
         <NeonNotFound />
         </div>
+        {/* <div>U gotta get to press the button one more time!</div> */}
       <div className={styles.button}>
         <LandingButton />
       </div>
