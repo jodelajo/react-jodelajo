@@ -7,6 +7,7 @@
 
 .messageContainer {
     padding-top: 120px;
+    padding-bottom: 60px;
     position: relative;
     display: flex;
     flex-direction: column;

@@ -62,15 +62,16 @@
 }
 
 .flame {
-  height: 260px;
-  margin-top: -120px;
-  /* aspect-ratio: 16 / 9;
-  object-fit: cover; */
-  transform: scale(0.5);
-  -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  -o-transform: scale(0.5);
+  height: auto;
+  max-height: 260px; 
+  margin-top: -140px;
+  /*aspect-ratio: 16 / 9;
+  object-fit: cover;
+  */transform: scale(0.4);
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  -o-transform: scale(0.4);
 }
 
 .port-img:hover {
@@ -165,10 +166,11 @@
   }
 
   .flame {
-    transform: scale(0.6);
-    -webkit-transform: scale(0.6);
-    -moz-transform: scale(0.6);
-    -ms-transform: scale(0.6);
-    -o-transform: scale(0.6);
+    max-height: auto;
+    transform: scale(0.45);
+    -webkit-transform: scale(0.45);
+    -moz-transform: scale(0.45);
+    -ms-transform: scale(0.45);
+    -o-transform: scale(0.45);
 }
 }

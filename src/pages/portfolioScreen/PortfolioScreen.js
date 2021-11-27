@@ -4,6 +4,7 @@ import styles from "./PortfolioScreen.module.css";
 import stringToSlug from "../../helpers/stringToSlug";
 import { PortfolioContext } from '../../context/PortfolioContext'
 
+
 function PortfolioScreen() {
   const { portData } = useContext(PortfolioContext)
   const [filteredPort, setFilteredPort] = useState();
@@ -56,6 +57,7 @@ useEffect(()=>{
     return port.category.css;
   });
 
+  
   function handleClickWordpress() {
     if (portWordpress) {
       setFilteredPort(portWordpress);
@@ -186,9 +188,14 @@ useEffect(()=>{
               </div>
 
               <p>{singlePort.title}</p>
+              {/* <Single
+        singlePort={singlePort}
+        /> */}
             </Link>
           </div>
+          
         ))}
+       
       </div>
 
       

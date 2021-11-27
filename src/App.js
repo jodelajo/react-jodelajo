@@ -5,6 +5,7 @@ import { Route, Switch, useHistory } from "react-router-dom";
 import NavBar from "./components/navBar/NavBar";
 import Landing from "../src/pages/landing/Landing";
 import Footer from "./components/footer/Footer";
+import PageNotFound from "./pages/pageNotFound/PageNotFound";
 import UseMediaQuery from "./components/UseMediaQuery";
 import useGaTracker from "./components/useGaTracker";
 
@@ -69,6 +70,7 @@ function App() {
             <Route path="/singleportfolio/:slug" component={SingPortLazy} />
             <Route path="/about" component={AboutLazy} />
             <Route path="/contact" component={ContactLazy} />
+            <Route component={PageNotFound} />
           </Switch>
 
           <span className="footer">

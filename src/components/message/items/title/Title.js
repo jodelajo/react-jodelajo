@@ -3,7 +3,7 @@ import styles from './Title.module.css'
 
 export default function Title() {
     return( <div className={styles.text}>
-        <p className={styles.title}>Message in a</p>
-        <p className={styles.lighter}>lighter</p>
+        <div className={styles.title}>Message in a</div>
+        <div className={styles.lighter}>flame</div>
       </div>)
 }
