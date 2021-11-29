@@ -6,7 +6,7 @@ import { useParams, useHistory } from "react-router-dom";
 import Characteristics from "../../components/characteristics/Characteristics";
 import { IoLogoGithub } from "react-icons/io5";
 import { CgWebsite } from "react-icons/cg";
-import PageNotFound from "../pageNotFound/PageNotFound";
+import Landing from "../landing/Landing";
 
 function SinglePortfolio() {
   const { portData } = useContext(PortfolioContext);
@@ -75,7 +75,7 @@ function SinglePortfolio() {
   return (
     <div className={styles["singlePort-container"]}>
       {currentSlug === undefined ? 
-      <PageNotFound />
+      <Landing text="404"/>
       :
       <><div className={styles["title-web"]}>
         <h1>{singlePort && singlePort.title}</h1>
