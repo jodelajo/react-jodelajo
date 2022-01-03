@@ -15,8 +15,6 @@ function SinglePortfolio() {
   const history = useHistory();
   const { slug } = useParams();
 
-
-
   const singlePort =
     portData &&
     portData.find((port) => {
@@ -27,7 +25,6 @@ function SinglePortfolio() {
     setCurrentSlug(singlePort && singlePort.slug);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [singlePort]);
-
 
   const nextId = parseInt(singlePort && singlePort.id) + 1;
   const nextPort =
@@ -75,7 +72,7 @@ function SinglePortfolio() {
   return (
     <div className={styles["singlePort-container"]}>
       {currentSlug === undefined ? 
-      <Landing text="404"/>
+      <Landing />
       :
       <><div className={styles["title-web"]}>
         <h1>{singlePort && singlePort.title}</h1>

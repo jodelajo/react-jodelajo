@@ -3,7 +3,6 @@ import styles from "./Neon.module.css";
 
 export default function Neon({ text }) {
 
-console.log('text', text);
   return (
     <div className={styles.neonWrapper}>
       {text === "jodelajo" ? (

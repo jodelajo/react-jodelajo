@@ -8,52 +8,37 @@ import Footer from "./components/footer/Footer";
 import UseMediaQuery from "./components/UseMediaQuery";
 import useGaTracker from "./components/useGaTracker";
 
-
-
 function App() {
   useGaTracker();
   const [theme, setTheme] = useState("dark");
-  const [notFound, setNotFound] = useState(true)
-  const [neonText, setNeonText] = useState("jodelajo")
+  const [notFound, setNotFound] = useState(true);
+  const [neonText, setNeonText] = useState("jodelajo");
   const isActive = UseMediaQuery("(min-width: 992px)");
 
-  let location = useLocation()
+  let location = useLocation();
   let slug = location.pathname;
-  let key = location.key
+  let key = location.key;
 
 
-//   console.log('history', history);
-// console.log('location', location);
-console.log('key', key);
-console.log('notfound', notFound);
-console.log('neontext', neonText);
-
-function pageNotFound(){
-  if (key !== undefined) {
-    setNotFound(false)
-    setNeonText("jodelajo")
+  function pageNotFound() {
+    if (key !== undefined) {
+      setNotFound(false);
+      setNeonText("jodelajo");
+    }
+    if (key === undefined) {
+      setNotFound(true);
+      setNeonText("404");
+    }
+    if (slug === "/") {
+      setNotFound(true);
+      setNeonText("jodelajo");
+    }
   }
-  if (key === undefined) {
-    setNotFound(true)
-    setNeonText("404")    
-  }
-  if (slug === "/" && key !== undefined) {
-    setNotFound(true)
-    setNeonText("jodelajo")
-  }
-}
 
-// function neonTextHandler() {
-//   if (notFound)
-// }
-
-
-useEffect(()=>{
-  pageNotFound()
-// eslint-disable-next-line react-hooks/exhaustive-deps
-},[key])
-
-
+  useEffect(() => {
+    pageNotFound();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [key]);
 
   const HomeLazy = lazy(() => import("../src/pages/home/Home"));
   const PortLazy = lazy(() =>
@@ -65,7 +50,6 @@ useEffect(()=>{
   const AboutLazy = lazy(() => import("../src/pages/about/About"));
   const ContactLazy = lazy(() => import("../src/pages/contact/Contact"));
 
-
   function themeHandler() {
     if (theme === "light") {
       setTheme("dark");
@@ -74,31 +58,33 @@ useEffect(()=>{
     }
   }
 
-
-
   return (
     <Suspense fallback={<div className={"fallBack"}></div>}>
-    <div className={`App ${theme}`}>
-    
+      <div className={`App ${theme}`}>
         <div className="app-container">
-       
-          {!isActive  || !notFound ? <NavBar /> : null}
-         
-
+          {!isActive || !notFound ? <NavBar /> : null}
           <Switch>
             {isActive ? (
-              <Route exact path="/" ><Landing text={neonText} /></Route>
+              <Route exact path="/">
+                <Landing text={neonText} />
+              </Route>
             ) : (
               <Route exact path="/" component={HomeLazy} />
             )}
 
-            {isActive && <Route exact path="/"  ><Landing text={neonText} /></Route>}
+            {isActive && (
+              <Route exact path="/">
+                <Landing text={neonText} />
+              </Route>
+            )}
             <Route exact path="/home" component={HomeLazy} />
-            <Route  path="/portfolioscreen" component={PortLazy} />
+            <Route path="/portfolioscreen" component={PortLazy} />
             <Route path="/singleportfolio/:slug" component={SingPortLazy} />
             <Route path="/about" component={AboutLazy} />
             <Route path="/contact" component={ContactLazy} />
-            <Route ><Landing text={neonText} /></Route>
+            <Route>
+              <Landing text={neonText} />
+            </Route>
           </Switch>
 
           <span className="footer">
@@ -106,10 +92,8 @@ useEffect(()=>{
               <Footer themeHandler={themeHandler} />
             ) : null}
           </span>
-          
         </div>
-     
-    </div>
+      </div>
     </Suspense>
   );
 }

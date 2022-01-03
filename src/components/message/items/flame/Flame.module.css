@@ -4,7 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 350px;
+  width:  100%;
+  height: auto;
 }
 
 .red {
@@ -154,7 +155,7 @@
   position: absolute;
   display: flex;
   align-items: center;
-  top: -100px;
+  top: -260px;
   margin-left: 26px;
   column-gap: 4px;
   height: 120px;

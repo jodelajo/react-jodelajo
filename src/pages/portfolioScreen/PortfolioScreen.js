@@ -184,13 +184,15 @@ useEffect(()=>{
                   alt="portfolio"
                   className={styles["port-img"]}
                 /> :
-                <div className={styles.flame}><singlePort.code  /></div>}
+                <div className={styles["port-img"]}>
+                  <div >
+                  <singlePort.code  />
+                  </div>
+                  </div>}
               </div>
 
               <p>{singlePort.title}</p>
-              {/* <Single
-        singlePort={singlePort}
-        /> */}
+        
             </Link>
           </div>
           
