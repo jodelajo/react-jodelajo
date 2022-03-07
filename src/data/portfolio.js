@@ -2,6 +2,30 @@ import Message from "../components/message/Message";
 
 export const portfolio = [
   {
+    title: "FNDR-app: Find your digital Agency",
+    website: "https://fndr.netlify.app/",
+    github: "https://github.com/jodelajo/fndr",
+    category: {
+      wordpress: false,
+      react: true,
+      logo: false,
+      css: true,
+      PHP: false,
+      vue: false,
+    },
+    image: "/portfolio/fndr.png",
+    description:
+      "Dit is een samenwerkingsproject met Thomas van de backend en deze app is nog in ontwikkeling. Met deze app kun je zoeken naar een digital agency. Je kunt filteren op locatie en bedrijfsgrootte. Inloggen gaat met JWToken.",
+    kenmerken: [
+      "Infinite scrolling & pagination",
+      "Fetch from API",
+      "Authentication",
+      "Version-control on Github",
+      "Continuous deployment",
+      "Agile, scrum",
+    ],
+  },
+  {
     title: "Nuxt-Vue-Vuex Product page",
     website: "https://nuxt-product-page.netlify.app/",
     github: "https://github.com/jodelajo/nuxt-product-page",
