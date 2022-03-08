@@ -15,7 +15,7 @@ export const portfolio = [
     },
     image: "/portfolio/fndr.png",
     description:
-      "Dit is een samenwerkingsproject met Thomas van de backend en deze app is nog in ontwikkeling. Met deze app kun je zoeken naar een digital agency. Je kunt filteren op locatie en bedrijfsgrootte. Inloggen gaat met JWToken.",
+      "Dit is een samenwerkingsproject met Thomas van der Backend en deze app is nog in ontwikkeling. Met deze app kun je zoeken naar een digital agency. Je kunt filteren op locatie en bedrijfsgrootte. Inloggen gaat met JWToken.",
     kenmerken: [
       "Infinite scrolling & pagination",
       "Fetch from API",
