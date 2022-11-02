@@ -2,6 +2,31 @@ import Message from "../components/message/Message";
 
 export const portfolio = [
   {
+    title: "React Native Result-tracker-app",
+    website: "https://sashas-results-tracker.netlify.app/",
+    github: "https://github.com/jodelajo/react-native-result-tracker",
+    category: {
+      wordpress: false,
+      react: true,
+      logo: false,
+      css: true,
+      PHP: false,
+      vue: false,
+    },
+    image: "/portfolio/react_native_result_tracker.jpg",
+    description:
+      "Dit is een appje voor mijn zoon. Hij kan verdienen met goede schoolcijfers, maar ook verliezen met slechte cijfers.",
+    kenmerken: [
+      "React-Native",
+      "Firebase-auth, database, storage",
+      "Cijfers invoeren, wijzigen, verwijderen",
+      "Profiel aanmaken",
+      "Version-control on Github",
+      "Continuous deployment",
+      "Ongoing met nieuwe features, zoals vakken invoeren, parent/student-role",
+    ],
+  },
+  {
     title: "FNDR-app: Find your digital Agency",
     website: "https://fndr.netlify.app/",
     github: "https://github.com/jodelajo/fndr",
